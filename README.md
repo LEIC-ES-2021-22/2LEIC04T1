@@ -12,7 +12,7 @@
 <img src=”mockup.png”>
 
 ## Vision Stament
-O processo de inscrição nas unidades e nas turmas pelo Sigarra pode ser melhorado, uma vez que este, devido a restrições de dispositivos pelo qual é feito o acesso, torna difícil este processo. Isto faz com que pelo computador o processo seja extremamente simples, mas, por outro lado, para quem faz o acesso e/ou tentativa de registo pelo telemóvel tenha grandes dificuldades em concretizar a inscrição. Deste modo, a PickUP visa melhorar este acesso através de uma mini-app integrada na app UNI, na qual será possível fazer a inscrição nas cadeiras e também nas turmas de forma interativa, visual e intuitiva. 
+O processo de inscrição nas unidades curriculares e nas turmas no Sigarra embora seja um processo extremamente simples, quem acede ou tenta efetuar o registo pelo telemóvel tem grandes dificuldades em concretizar a sua inscrição. Deste modo, a PickUP visa melhorar este acesso através de uma mini-app integrada na app UNI, na qual será possível fazer a inscrição nas cadeiras e também nas turmas de forma interativa, visual e intuitiva. 
 
 ## Main Features
  - <b>Inscrever nas cadeiras</b> - Aba para puder efetuar a inscrição nas cadeiras optativas através de uma interface visual e interativa do horário resultante. 
