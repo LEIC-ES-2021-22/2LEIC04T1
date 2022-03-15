@@ -9,7 +9,7 @@
 
 
 # PickUP
-### App Draft
+## App Draft
 <p align="center" justify="center">
   <img src="mockup.png"/>
 </p>
