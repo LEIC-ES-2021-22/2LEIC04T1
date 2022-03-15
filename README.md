@@ -20,4 +20,7 @@ O processo de inscrição nas unidades e nas turmas pelo Sigarra pode ser melhor
 ...
 
 ## Required API's
-- Student timetable from sigarra
+- Acesso á posição no plano do estudante 
+- Vagas disponíveis na cadeira  
+- Horários de cada turma 
+- Acesso as vagas na turma 
