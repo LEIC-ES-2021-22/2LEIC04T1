@@ -26,4 +26,11 @@ O processo de inscrição nas unidades curriculares e nas turmas no Sigarra embo
 - Acesso á posição no plano do estudante 
 - Vagas disponíveis na cadeira  
 - Horários de cada turma 
-- Acesso as vagas na turma 
+- Acesso as vagas na turma
+
+
+## App Draft
+<p align="center" justify="center">
+  <img src="mockup.png"/>
+</p>
+
