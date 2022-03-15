@@ -2,11 +2,11 @@
 
 ## Members
 
-Guilherme de Sousa Carvalho - 202005369
-José Miguel Moreira Isidro - 202006485
-Francisco Rafael Pereira Teixeira - 202006111
-José Leandro Rodrigues da Silva - 202008061
-Luís Filipe Pinto Cunha - 201709375
+-Guilherme de Sousa Carvalho - 202005369
+-José Miguel Moreira Isidro - 202006485
+-Francisco Rafael Pereira Teixeira - 202006111
+-José Leandro Rodrigues da Silva - 202008061
+-Luís Filipe Pinto Cunha - 201709375
 
 
 # Product Name
