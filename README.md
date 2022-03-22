@@ -11,7 +11,7 @@
 # PickUP
 ## App Draft
 <p align="center" justify="center">
-  <img src="mockup.png"/>
+  <img src="/images/mockup.png"/>
 </p>
 
 ## Vision Stament
