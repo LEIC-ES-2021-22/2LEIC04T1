@@ -22,8 +22,7 @@ O processo de inscrição nas unidades curriculares e nas turmas no Sigarra embo
  - <b>Inscrever em turmas</b>   - Permitir ao user efetuar a inscrição nas diversas turmas das Unidades Curriculares em que o estudante possui inscrição com uma interface visual e interativa do horário resultante. 
  - <b>Opção para poder ver o horário escolhido atualmente</b> - Ver o horário atualmente escolhido tendo em conta as turmas e Unidades Curriculares escolhidas. 
  - <b>Visualizar horários das turmas de cada Unidade Curricular</b> - Permitir ver o horário de cada Turma em cada cadeira antes de efetuar a sua escolha, previsualizando o horário resultante se a escolha for efetuada. 
- - <b>Notificação em caso de abertura de vagas em turmas desejadas</b> - No caso de abertura de vagas em turmas desejadas o user é notificado através do envio de uma notificação para o dispositivo. 
-...
+ - <b>Notificação em caso de abertura de vagas em turmas desejadas</b> - No caso de abertura de vagas em turmas desejadas o user é notificado através do envio de uma notificação para o dispositivo.
 
 ## Required API's
 - Acesso á posição no plano do estudante 
