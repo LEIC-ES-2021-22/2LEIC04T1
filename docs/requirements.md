@@ -34,6 +34,16 @@ Briefly describe each use case mentioning the following:
 | *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra.<br> 3. O sistema mostras as Unidades Curriculares disponíveis para a inscrição.<br> 4. O utilizador escolhe as Unidades Curriculares nas quais pretende se inscrever.<br> 5. O utilizador confirma as suas escolhas. |
 | *Alternative flows and exceptions* | 1. [ETCS Insuficientes] Se o utilizador não tiver ETCS suficientes para se inscrever numa Unidade Curricular, o sistema permite ao utilizador alterar a sua opção para concluir a inscrição. |
 
+|||
+| --- | --- |
+| *Name* | Alteração das unidades curriculares|
+| *Actor* |  Utilizador | 
+| *Description* | O utilizador tem a opção de poder alterar as unidades curriculares ás quais se inscreveu posteriormente. |
+| *Preconditions* | O utilizador necessita de estar inscrito á unidade curricular que deseja alterar |
+| *Postconditions* |  O utilizador altera a Unidade Curriculare. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada.  |
+| *Normal flow* | 1. O utilizador acessa á aplicação através do smartphone.<br> 2. O sistema mostra ao utilizador todas as opções disponiveis.<br> 3. O utilizador escolhe a opção de "Alteração da Unidade Curricular".<br> 4. O utilizador escolhe a unidade curricular pretendida.<br> 5. O sistema mostra ao utilizador todas as opções possíveis.<br> 6. O sistema notifica o utilizador caso a acção foi bem sucedida|
+| *Alternative flows and exceptions* | 1. [Date Expired] Se a data de alteração destinada á alteração das unidades curriculares expirar, o utilizador não conseguirá fazer a alteração |
+
 ### User stories
 The user stories should be created as GitHub issues. Therefore, this section will *not* exist in your report, it is here only to explain how you should describe the requirements of the product as **user stories**. 
 
