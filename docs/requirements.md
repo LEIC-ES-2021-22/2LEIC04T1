@@ -24,16 +24,15 @@ Briefly describe each use case mentioning the following:
 * **Normal Flow**. Provide a detailed description of the user actions and system responses that will take place during execution of the use case under normal, expected conditions. This dialog sequence will ultimately lead to accomplishing the goal stated in the use case name and description. This is best done as a numbered list of actions performed by the actor, alternating with responses provided by the system. 
 * **Alternative Flows and Exceptions**. Document other, legitimate usage scenarios that can take place within this use case, stating any differences in the sequence of steps that take place. In addition, describe any anticipated error conditions that could occur during execution of the use case, and define how the system is to respond to those conditions. 
 
-Example:
 |||
 | --- | --- |
-| *Name* | Purchase tickets online |
-| *Actor* |  Customer | 
-| *Description* | The customer purchases one or more tickets for an event, using an electronic payment method, having the option to choose places. |
-| *Preconditions* | - The customer has electronic payment means. <br> - The event has tickets available on-sale. |
-| *Postconditions* | - The customer gets the electronic tickets with a QR code. <br> - The customer is charged of the tickets’ cost, and the seller credited. <br> - Information of tickets sold & seats available for the event is updated. |
-| *Normal flow* | 1. The customer accesses the web page of the ticketing system.<br> 2. The system shows the list of events with tickets on-sale.<br> 3. The customer selects the event and the number of tickets.<br> 4. If wanted, the costumer may Choose Places.<br> 5. The system shows the total price to pay.<br> 6. The system redirects the customer to Electronic Payment.<br> 7. The system delivers the electronic tickets to the customer with a unique identifier and QR code. |
-| *Alternative flows and exceptions* | 1. [Payment failure] If, in step 6 of the normal flow the payment fails, the system gives the user the possibility to cancel or retry. |
+| *Name* | Inscrição nas Unidades Curriculares |
+| *Actor* |  Utilizador | 
+| *Description* | O utilizador pode inscrever-se nas Unidades Curriculares que vai ter nesse ano letivo. |
+| *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. <br> - O Utilizador tem ETCS disponíveis para se inscrever nas Unidades Curriculares. |
+| *Postconditions* | - O utilizador fica inscrito nas Unidades Curriculares. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada. |
+| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra.<br> 3. O sistema mostras as Unidades Curriculares disponíveis para a inscrição.<br> 4. O utilizador escolhe as Unidades Curriculares nas quais pretende se inscrever.<br> 5. O utilizador confirma as suas escolhas. |
+| *Alternative flows and exceptions* | 1. [ETCS Insuficientes] Se o utilizador não tiver ETCS suficientes para se inscrever numa Unidade Curricular, o sistema permite ao utilizador alterar a sua opção para concluir a inscrição. |
 
 ### User stories
 The user stories should be created as GitHub issues. Therefore, this section will *not* exist in your report, it is here only to explain how you should describe the requirements of the product as **user stories**. 
