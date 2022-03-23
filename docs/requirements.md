@@ -30,7 +30,7 @@ Briefly describe each use case mentioning the following:
 | *Actor* |  Utilizador | 
 | *Description* | O utilizador pode inscrever-se nas Unidades Curriculares que vai ter nesse ano letivo. |
 | *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. <br> - O Utilizador tem ETCS disponíveis para se inscrever nas Unidades Curriculares. |
-| *Postconditions* | - O utilizador fica inscrito nas Unidades Curriculares. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada. |
+| *Postconditions* | - O utilizador fica inscrito nas Unidades Curriculares. <br> - As ETCS disponíveis do utilizador são atualizadas. <br> - A informação sobre as vagas das Unidades Curriculares são atualizadas. |
 | *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra.<br> 3. O sistema mostras as Unidades Curriculares disponíveis para a inscrição.<br> 4. O utilizador escolhe as Unidades Curriculares nas quais pretende se inscrever.<br> 5. O utilizador confirma as suas escolhas. |
 | *Alternative flows and exceptions* | 1. [ETCS Insuficientes] Se o utilizador não tiver ETCS suficientes para se inscrever numa Unidade Curricular, o sistema permite ao utilizador alterar a sua opção para concluir a inscrição. |
 
@@ -38,11 +38,31 @@ Briefly describe each use case mentioning the following:
 | --- | --- |
 | *Name* | Alteração das unidades curriculares|
 | *Actor* |  Utilizador | 
-| *Description* | O utilizador tem a opção de poder alterar as unidades curriculares ás quais se inscreveu posteriormente. |
-| *Preconditions* | O utilizador necessita de estar inscrito á unidade curricular que deseja alterar |
-| *Postconditions* |  O utilizador altera a Unidade Curriculare. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada.  |
-| *Normal flow* | 1. O utilizador acessa á aplicação através do smartphone.<br> 2. O sistema mostra ao utilizador todas as opções disponiveis.<br> 3. O utilizador escolhe a opção de "Alteração da Unidade Curricular".<br> 4. O utilizador escolhe a unidade curricular pretendida.<br> 5. O sistema mostra ao utilizador todas as opções possíveis.<br> 6. O sistema notifica o utilizador caso a acção foi bem sucedida|
-| *Alternative flows and exceptions* | 1. [Date Expired] Se a data de alteração destinada á alteração das unidades curriculares expirar, o utilizador não conseguirá fazer a alteração |
+| *Description* | O utilizador tem a opção de poder alterar as unidades curriculares às quais se inscreveu. |
+| *Preconditions* | O utilizador necessita de estar inscrito na unidade curricular que deseja alterar. |
+| *Postconditions* |  O utilizador altera a Unidade Curricular. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada.  |
+| *Normal flow* | 1. O utilizador acessa á aplicação através do smartphone.<br> 2. O sistema mostra ao utilizador todas as opções disponiveis.<br> 3. O utilizador escolhe a opção de "Alteração da Unidade Curricular".<br> 4. O utilizador escolhe a unidade curricular pretendida.<br> 5. O sistema mostra ao utilizador todas as opções possíveis.<br> 6. O sistema notifica o utilizador caso a acção foi bem sucedida. |
+| *Alternative flows and exceptions* | 1. [Date Expired] Se a data de alteração destinada à alteração das unidades curriculares expirar, o utilizador não conseguirá fazer a alteração. |
+
+|||
+| --- | --- |
+| *Name* | Atribuição de Turmas |
+| *Actor* |  Sistema | 
+| *Description* | Para atribuir as turmas (horário) ao user, tendo em conta a escolha realizada, efetua-se um processo de seleção e é atribuido um horário ao user. |
+| *Preconditions* | - O user submeteu a sua escolha de turmas.<br> - Todos os outros estudantes inscritos na mesmas unidades curriculares que o user também submeteram as suas escolhas.<br> - O número de vagas disponíveis em cada unidade curricular é igual ou superior ao número de estudantes que pretendem efetuar inscrição nas turmas de cada unidade curricular. |
+| *Postconditions* | - O horário resultante fica disponível para visualização pelo user.<br> - O user fica inscrito em turmas (que podem ou não ser as selecionadas por ele) das suas unidades curriculares. |
+| *Normal flow* | 1. O sistema recebe as opções do user e dos restantes estudantes.<br> 2. O sistema procede ao processo de seleção e distribuição das vagas de cada turma pelos estudantes, tendo em conta critérios de triagem e desempate.<br> 3. O sistema increve o user e os restantes estudantes nas turmas. <br> 4. O horário resultante é atualizado/exibido na aplicação.<br> |
+| *Alternative flows and exceptions* | 1. [Vaga não disponível] Se o sistema no passo 2 não conseguir atribuir ao user uma vaga numa das turmas selecionadas, o sistema tenta inscrever o user em turmas de menor prioridade (também selecionadas pelo user) . Se mesmo assim, não for possível atribuir vaga ao user, este fica inscrito numa turma que ainda possui vagas disponíveis.|
+
+|||
+| --- | --- |
+| *Name* | Notificação de vaga numa turma |
+| *Actor* |  Sistema | 
+| *Description* | Na eventualidade de abertura de uma vaga numa turma, que na escolha do user possui prioridade superior à turma em que está atualmente inscrito, o user é notificado da situação através das notificações do smartphone. |
+| *Preconditions* | - O user encontra-se atualmente inscrito numa turma da Unidade curricular em questão.<br> - Uma vaga fica disponível numa turma de prioridade superior nas opções do user. |
+| *Postconditions* | - O user é notificado desta abertura de vaga através das notificações do smartphone. |
+| *Normal flow* | 1. O sistema é informado da abertura de uma vaga numa turma de prioridade superior nas opções do user.<br> 2. O sistema envia ao user uma notificação de smartphone a informar sobre a abertura da vaga.  |
+| *Alternative flows and exceptions* | 1. [Abertura de mais vagas] Na possibilidade de abrir mais do que uma vaga na turma o user deve ser notificado apenas uma vez (quando o nº de vagas disponíveis é 1), de modo a evitar spam. |
 
 ### User stories
 The user stories should be created as GitHub issues. Therefore, this section will *not* exist in your report, it is here only to explain how you should describe the requirements of the product as **user stories**. 
