@@ -39,8 +39,8 @@ Briefly describe each use case mentioning the following:
 | *Name* | Alteração das unidades curriculares|
 | *Actor* |  Utilizador | 
 | *Description* | O utilizador tem a opção de poder alterar as unidades curriculares às quais se inscreveu. |
-| *Preconditions* | O utilizador necessita de estar inscrito na unidade curricular que deseja alterar. |
-| *Postconditions* |  O utilizador altera a Unidade Curricular. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada.  |
+| *Preconditions* | - O utilizador necessita de estar inscrito na unidade curricular que deseja alterar. |
+| *Postconditions* |  - O utilizador altera a Unidade Curricular. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada.  |
 | *Normal flow* | 1. O utilizador acessa á aplicação através do smartphone.<br> 2. O sistema mostra ao utilizador todas as opções disponiveis.<br> 3. O utilizador escolhe a opção de "Alteração da Unidade Curricular".<br> 4. O utilizador escolhe a unidade curricular pretendida.<br> 5. O sistema mostra ao utilizador todas as opções possíveis.<br> 6. O sistema notifica o utilizador caso a acção foi bem sucedida. |
 | *Alternative flows and exceptions* | 1. [Date Expired] Se a data de alteração destinada à alteração das unidades curriculares expirar, o utilizador não conseguirá fazer a alteração. |
 
