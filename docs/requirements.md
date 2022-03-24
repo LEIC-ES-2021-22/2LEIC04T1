@@ -28,7 +28,7 @@ Briefly describe each use case mentioning the following:
 | --- | --- |
 | *Name* | Inscrição nas Unidades Curriculares |
 | *Actor* |  Utilizador | 
-| *Description* | O utilizador pode inscrever-se nas Unidades Curriculares que vai ter nesse ano letivo. |
+| *Description* | O utilizador tem a opção de poder inscrever-se nas Unidades Curriculares que vai ter nesse ano letivo. |
 | *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. <br> - O Utilizador tem ETCS disponíveis para se inscrever nas Unidades Curriculares. |
 | *Postconditions* | - O utilizador fica inscrito nas Unidades Curriculares. <br> - As ETCS disponíveis do utilizador são atualizadas. <br> - A informação sobre as vagas das Unidades Curriculares são atualizadas. |
 | *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra.<br> 3. O sistema mostras as Unidades Curriculares disponíveis para a inscrição.<br> 4. O utilizador escolhe as Unidades Curriculares nas quais pretende se inscrever.<br> 5. O utilizador confirma as suas escolhas. |
@@ -42,7 +42,27 @@ Briefly describe each use case mentioning the following:
 | *Preconditions* | - O utilizador necessita de estar inscrito na unidade curricular que deseja alterar. |
 | *Postconditions* |  - O utilizador altera a Unidade Curricular. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada.  |
 | *Normal flow* | 1. O utilizador acessa á aplicação através do smartphone.<br> 2. O sistema mostra ao utilizador todas as opções disponiveis.<br> 3. O utilizador escolhe a opção de "Alteração da Unidade Curricular".<br> 4. O utilizador escolhe a unidade curricular pretendida.<br> 5. O sistema mostra ao utilizador todas as opções possíveis.<br> 6. O sistema notifica o utilizador caso a acção foi bem sucedida. |
-| *Alternative flows and exceptions* | 1. [Date Expired] Se a data de alteração destinada à alteração das unidades curriculares expirar, o utilizador não conseguirá fazer a alteração. |
+| *Alternative flows and exceptions* | 1. [Data Expirada] Se a data de alteração destinada à alteração das unidades curriculares expirar, o utilizador não conseguirá fazer a alteração. |
+
+|||
+| --- | --- |
+| *Name* | Visualização  do horário |
+| *Actor* |  Utilizador | 
+| *Description* | O utilizador pode visualizar o horario que foi atribuido pelo sistema. |
+| *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. <br>  |
+| *Postconditions* | - O utilizador fica inscrito nas Unidades Curriculares. <br> - As ETCS disponíveis do utilizador são atualizadas. <br> - A informação sobre as vagas das Unidades Curriculares são atualizadas. |
+| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra.<br> 3. O sistema mostra ao utilizador todas as opções disponiveis.<br> 4. O utilizador escolhe a opção "Visualizar Horário". |
+| *Alternative flows and exceptions* |  1. [Horário Inexistente] O Utilizador ainda não realizou a inscrição no Sistema.<br> 2.[Horário Não Atribuido] O sistema ainda não atribui ao utilizador o horário. |
+
+|||
+| --- | --- |
+| *Name* | Inscrição nas Unidades Curriculares |
+| *Actor* |  Utilizador | 
+| *Description* | O utilizador  pode inscrever-se nas Unidades Curriculares que vai ter nesse ano letivo. |
+| *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. <br> - O Utilizador tem ETCS disponíveis para se inscrever nas Unidades Curriculares. |
+| *Postconditions* | - O utilizador fica inscrito nas Unidades Curriculares. <br> - As ETCS disponíveis do utilizador são atualizadas. <br> - A informação sobre as vagas das Unidades Curriculares são atualizadas. |
+| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra.<br> 3. O sistema mostras as Unidades Curriculares disponíveis para a inscrição.<br> 4. O utilizador escolhe as Unidades Curriculares nas quais pretende se inscrever.<br> 5. O utilizador confirma as suas escolhas. |
+| *Alternative flows and exceptions* | 1. [ETCS Insuficientes] Se o utilizador não tiver ETCS suficientes para se inscrever numa Unidade Curricular, o sistema permite ao utilizador alterar a sua opção para concluir a inscrição. |
 
 |||
 | --- | --- |
