@@ -71,7 +71,7 @@ Briefly describe each use case mentioning the following:
 | *Description* | O utilizador pode visualizar o horário de cada Unidade Curricular antes mesmo da sua inscrição  |
 | *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. |
 | *Postconditions* | - O utilizador visualiza o horário de cada unidade curricular. <br> - As ETCS disponíveis do utilizador são atualizadas. <br> - A informação sobre as vagas das Unidades Curriculares são atualizadas. |
-| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra. <br> 3. O sistema mostra ao utilizador todas as opções disponiveis.<br>4. O utilizador escolhe a opção de "Consulta do Horário de cada Unidade Curricular" <br> 4. O utilizador escolhe a Unidade Curricular que deseja visualizar.<br> 5. O sistema mostra todas as aulas , quer teóricas , quer prática da unidade currilcar selecionada. |
+| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra. <br> 3. O sistema mostra ao utilizador todas as opções disponiveis.<br>4. O utilizador escolhe a opção de "Consulta do Horário de cada Unidade Curricular" <br> 5. O utilizador escolhe a Unidade Curricular que deseja visualizar.<br> 6. O sistema mostra todas as aulas , quer teóricas , quer prática da unidade currilcar selecionada. |
 | *Alternative flows and exceptions* | 1. [Sem Horário] O sistema não tem informação do horário  . |
 
 
