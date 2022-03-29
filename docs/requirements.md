@@ -79,11 +79,11 @@ Briefly describe each use case mentioning the following:
 | --- | --- |
 | *Name* | Atribuição de Turmas |
 | *Actor* |  Sistema | 
-| *Description* | Para atribuir as turmas/horário ao user, tendo em conta a sua escolha, realiza-se um processo de seleção de onde resultam as turmas onde o sistema irá, automaticamente, inscrever o user e atribuir-lhe um horário. |
-| *Preconditions* | - O user submeteu a sua escolha de turmas.<br> - Todos os outros estudantes inscritos na mesmas unidades curriculares que o user também submeteram as suas escolhas.<br> - O número de vagas disponíveis em cada unidade curricular é igual ou superior ao número de estudantes que pretendem efetuar inscrição nas turmas de cada unidade curricular. |
-| *Postconditions* | - O horário resultante fica disponível para visualização pelo user.<br> - O user fica inscrito em turmas (que podem ou não ser as selecionadas por ele) das suas unidades curriculares. |
-| *Normal flow* | 1. O sistema recebe as opções do user e dos restantes estudantes.<br> 2. O sistema procede ao processo de seleção e distribuição das vagas de cada turma pelos estudantes, tendo em conta critérios de triagem e desempate.<br> 3. O sistema increve o user e os restantes estudantes nas turmas. <br> 4. O horário resultante é atualizado/exibido na aplicação.<br> |
-| *Alternative flows and exceptions* | 1. [Vaga não disponível] Se o sistema no passo 2 não conseguir atribuir ao user uma vaga numa das turmas selecionadas, o sistema tenta inscrever o user em turmas de menor prioridade (também selecionadas pelo user) . Se mesmo assim, não for possível atribuir vaga ao user, este fica inscrito numa turma que ainda possui vagas disponíveis.|
+| *Description* | Para atribuir as turmas/horário ao utilizador, tendo em conta a sua escolha, realiza-se um processo de seleção de onde resultam as turmas onde o sistema irá, automaticamente, inscrever o utilizador e atribuir-lhe um horário. |
+| *Preconditions* | - O utilizador submeteu a sua escolha de turmas.<br> - Todos os outros estudantes inscritos na mesmas unidades curriculares que o utilizador também submeteram as suas escolhas.<br> - O número de vagas disponíveis em cada unidade curricular é igual ou superior ao número de estudantes que pretendem efetuar inscrição nas turmas de cada unidade curricular. |
+| *Postconditions* | - O horário resultante fica disponível para visualização pelo utilizador.<br> - O user fica inscrito em turmas (que podem ou não ser as selecionadas por ele) das suas unidades curriculares. |
+| *Normal flow* | 1. O sistema recebe as opções do utilizador e dos restantes estudantes.<br> 2. O sistema procede ao processo de seleção e distribuição das vagas de cada turma pelos estudantes, tendo em conta critérios de triagem e desempate.<br> 3. O sistema increve o utilizador e os restantes estudantes nas turmas. <br> 4. O horário resultante é atualizado/exibido na aplicação.<br> |
+| *Alternative flows and exceptions* | 1. [Vaga não disponível] Se o sistema no passo 2 não conseguir atribuir ao utilizador uma vaga numa das turmas selecionadas, o sistema tenta inscrever o utilizador em turmas de menor prioridade (também selecionadas pelo utilizador) . Se mesmo assim, não for possível atribuir vaga ao utilizador, este fica inscrito numa turma que ainda possui vagas disponíveis.|
 
 |||
 | --- | --- |
