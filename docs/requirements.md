@@ -61,7 +61,7 @@ Briefly describe each use case mentioning the following:
 | *Description* | O utilizador pode visualizar o horario que foi atribuido pelo sistema. |
 | *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. <br>  |
 | *Postconditions* | - O utilizador visualiza o seu horário.  |
-| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra. <br> 3. O sistema mostra ao utilizador todas as opções disponiveis.<br>4. O utilizador escolhe a opção de "Visualizar Horáririo" <br> 4. O utilizador visualiza o horário que lhe foi atribuido pelo sistema |
+| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra. <br> 3. O sistema mostra ao utilizador todas as opções disponiveis.<br>4. O utilizador escolhe a opção de "Visualizar Horáririo" <br> 5. O utilizador visualiza o horário que lhe foi atribuido pelo sistema |
 | *Alternative flows and exceptions* |  1. [Horário Inexistente] O Utilizador ainda não realizou a inscrição no Sistema.<br> 2.[Horário Não Atribuido] O sistema ainda não atribui ao utilizador o horário. |
 
 |||
