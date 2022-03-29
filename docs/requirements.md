@@ -41,7 +41,7 @@ Briefly describe each use case mentioning the following:
 | *Description* | O utilizador tem a opção de poder alterar as unidades curriculares às quais se inscreveu. |
 | *Preconditions* | - O utilizador necessita de estar inscrito na unidade curricular que deseja alterar. |
 | *Postconditions* |  - O utilizador altera a Unidade Curricular. <br> - Os ETCS disponíveis do utilizador são atualizados. <br> - A informação sobre as vagas das Unidades Curriculares é atulizada.  |
-| *Normal flow* | 1. 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra. <br>3. O sistema mostra ao utilizador todas as opções disponiveis.<br> 4. O utilizador escolhe a opção de "Alteração da Unidade Curricular".<br> 5. O utilizador escolhe a unidade curricular pretendida.<br> 6. O sistema mostra ao utilizador todas as opções possíveis.<br> 7. O sistema notifica o utilizador caso a acção foi bem sucedida. |
+| *Normal flow* | 1. O utilizador acessa a app UNI no seu smartphone.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra. <br>3. O sistema mostra ao utilizador todas as opções disponiveis.<br> 4. O utilizador escolhe a opção de "Alteração da Unidade Curricular".<br> 5. O utilizador escolhe a unidade curricular pretendida.<br> 6. O sistema mostra ao utilizador todas as opções possíveis.<br> 7. O sistema notifica o utilizador caso a acção foi bem sucedida. |
 | *Alternative flows and exceptions* | 1. [Data Expirada] Se a data destinada à alteração das unidades curriculares expirar, o utilizador não conseguirá fazer a alteração. |
 
 |||
