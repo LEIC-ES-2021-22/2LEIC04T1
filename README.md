@@ -9,10 +9,9 @@
 
 
 # PickUP
-## App Draft
-<p align="center" justify="center">
-  <img src="/images/mockup.png"/>
-</p>
+
+![logo](https://user-images.githubusercontent.com/93782886/160712819-5d3450ed-89fd-4041-92d0-6aaefd90687d.png)
+
 
 ## Vision Stament
 O processo de inscrição nas unidades curriculares e nas turmas no Sigarra embora seja um processo extremamente simples, quem acede ou tenta efetuar o registo pelo telemóvel tem grandes dificuldades em concretizar a sua inscrição, uma vez que a interface do Sigarra não está "otimizada" para este dispositivo (i.e. a página web fica desformatada ao ser vista no telemóvel). Deste modo, a PickUP visa melhorar este acesso através de uma mini-app integrada na app UNI, na qual será possível fazer a inscrição nas Unidades Curriculares e também nas turmas de forma interativa, visual e intuitiva. 
