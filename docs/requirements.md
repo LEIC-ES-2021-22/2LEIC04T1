@@ -129,3 +129,14 @@ Example:
  <p align="center" justify="center">
   <img src="https://github.com/LEIC-ES-2021-22/templates/blob/main/images/DomainModel.png"/>
 </p>
+
+
+Classes:
+Utilizador {id, nome}
+Unidade Curricular {id, nome, vagas}
+Turma {numero, vagas, horario}
+
+Associações:
+Utilizador * -- * Unidade Curricular
+Utilizador * -- * Turma
+Unidade Curricular * -- * Turma
