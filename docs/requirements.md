@@ -89,11 +89,11 @@ Briefly describe each use case mentioning the following:
 | --- | --- |
 | *Name* | Notificação de vaga numa turma |
 | *Actor* |  Sistema | 
-| *Description* | Na eventualidade de abertura de uma vaga numa turma, que na escolha do user possui prioridade superior à turma em que está atualmente inscrito, o user é notificado da situação através das notificações do smartphone. |
-| *Preconditions* | - O user encontra-se atualmente inscrito numa turma da Unidade curricular em questão.<br> - Uma vaga fica disponível numa turma de prioridade superior nas opções do user. |
-| *Postconditions* | - O user é notificado desta abertura de vaga através das notificações do smartphone. |
-| *Normal flow* | 1. O sistema é informado da abertura de uma vaga numa turma de prioridade superior nas opções do user.<br> 2. O sistema envia ao user uma notificação de smartphone a informar sobre a abertura da vaga.  |
-| *Alternative flows and exceptions* | 1. [Abertura de mais vagas] Na possibilidade de abrir mais do que uma vaga na turma o user deve ser notificado apenas uma vez (quando o nº de vagas disponíveis é 1), de modo a evitar spam. |
+| *Description* | Na eventualidade de abertura de uma vaga numa turma, que na escolha do utilizador possui prioridade superior à turma em que está atualmente inscrito, o mesmo é notificado da situação através das notificações do smartphone. |
+| *Preconditions* | - O utilizador encontra-se atualmente inscrito numa turma da Unidade curricular em questão.<br> - Uma vaga fica disponível numa turma de prioridade superior nas opções do utilizador. |
+| *Postconditions* | - O utilizador é notificado desta abertura de vaga através das notificações do smartphone. |
+| *Normal flow* | 1. O sistema é informado da abertura de uma vaga numa turma de prioridade superior nas opções do utilizador.<br> 2. O sistema envia ao utilizador uma notificação de smartphone a informar sobre a abertura da vaga.  |
+| *Alternative flows and exceptions* | 1. [Abertura de mais vagas] Na possibilidade de abrir mais do que uma vaga na turma o utilizador deve ser notificado apenas uma vez (quando o nº de vagas disponíveis é 1), de modo a evitar spam. |
 
 ### User stories
 The user stories should be created as GitHub issues. Therefore, this section will *not* exist in your report, it is here only to explain how you should describe the requirements of the product as **user stories**. 
