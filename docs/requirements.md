@@ -46,6 +46,16 @@ Briefly describe each use case mentioning the following:
 
 |||
 | --- | --- |
+| *Name* | Escolha de Turmas |
+| *Actor* |  Utilizador | 
+| *Description* | O utilizador realiza a escolha de turmas, sendo esta apenas um sugestão que depois será tida em conta para a realização da atribuição de turmas por parte do sistema. |
+| *Preconditions* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra. <br> - O utilizador tem vagas disponíveis nas turmas a que se está a tentar inscrever. <br> |
+| *Postconditions* | - O utilizador fica à espera da confirmação da inscrição nas turmas. <br>|
+| *Normal flow* | - O utilizador está autenticado na app da UNI com a sua conta do Sigarra.<br> 2. O utilizador autentifica-se no sistema com a sua conta do Sigarra.<br> 3. O sistema mostra ao utilizador todas as opções disponiveis.<br> 4. O utilizador escolhe a opção "Escolha de Turmas".<br> 5. O sistema mostra ao utilizador todas as turmas possíveis a que o utilizador se pode candidatar.<br> 6. O sistema notifica o utilizador caso a acção foi bem sucedida.<br> |
+| *Alternative flows and exceptions* | 1. [Não existem vagas disponíveis] Se o sistema não tiver vagas disponíveis para a turma que o utilizador pretende, este terá de escolher outra turma. |
+
+|||
+| --- | --- |
 | *Name* | Visualização  do horário |
 | *Actor* |  Utilizador | 
 | *Description* | O utilizador pode visualizar o horario que foi atribuido pelo sistema. |
