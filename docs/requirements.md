@@ -3,7 +3,7 @@
 
 ### Use case model  
 
-Example:
+Diagram:
  <p align="center" justify="center">
   <img src="/images/usecases.png"/>
 </p>
