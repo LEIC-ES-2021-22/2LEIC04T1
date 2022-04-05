@@ -1,13 +1,7 @@
 
 ## Requirements
 
-In this section, you should describe all kinds of requirements for your module: functional and non-functional requirements.
-
-### Use case model 
-
-Create a use-case diagram in UML with all high-level use cases possibly addressed by your module, to clarify the context and boundaries of your application.
-
-Give each use case a concise, results-oriented name. Use cases should reflect the tasks the user needs to be able to accomplish using the system. Include an action verb and a noun. 
+### Use case model  
 
 Example:
  <p align="center" justify="center">
@@ -15,7 +9,7 @@ Example:
 </p>
 
 
-Briefly describe each use case mentioning the following:
+Description of each use case:
 
 * **Actor**. Name only the actor that will be initiating this use case, i.e. a person or other entity external to the software system being specified who interacts with the system and performs use cases to accomplish tasks. 
 * **Description**. Provide a brief description of the reason for and outcome of this use case, or a high-level description of the sequence of actions and the outcome of executing the use case. 
@@ -95,31 +89,6 @@ Briefly describe each use case mentioning the following:
 | *Normal flow* | 1. O sistema é informado da abertura de uma vaga numa turma de prioridade superior nas opções do utilizador.<br> 2. O sistema envia ao utilizador uma notificação de smartphone a informar sobre a abertura da vaga.  |
 | *Alternative flows and exceptions* | 1. [Abertura de mais vagas] Na possibilidade de abrir mais do que uma vaga na turma o utilizador deve ser notificado apenas uma vez (quando o nº de vagas disponíveis é 1), de modo a evitar spam. |
 
-### User stories
-The user stories should be created as GitHub issues. Therefore, this section will *not* exist in your report, it is here only to explain how you should describe the requirements of the product as **user stories**. 
-
-A user story is a description of desired functionality told from the perspective of the user or customer. A starting template for the description of a user story is 
-
-*As a < user role >, I want < goal > so that < reason >.*
-
-User stories should be created and described as [Issues](https://github.com/LEIC-ES-2021-22/templates/issues) in GitHub with the label "user story". See how to in the video [Creating a Product Backlog of User Stories for Agile Development using GitHub](https://www.youtube.com/watch?v=m8ZxTHSKSKE).
-
-You should name the issue with the text of the user story, and, in the "comments" field, add any relevant notes, the image(s) of the user interface mockup(s) (see below) and the acceptance test scenarios (see below). 
-
-**INVEST in good user stories**. 
-You may add more details after, but the shorter and complete, the better. In order to decide if the user story is good, please follow the [INVEST guidelines](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/).
-
-**User interface mockups**.
-After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
-
-**Acceptance tests**.
-For each user story you should write also the acceptance tests (textually in [Gherkin](https://cucumber.io/docs/gherkin/reference/)), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
-
-**Value and effort**.
-At the end, it is good to add a rough indication of the value of the user story to the customers (e.g. [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) method) and the team should add an estimation of the effort to implement it, for example, using t-shirt sizes (XS, S, M, L, XL).
-
-
-
 ### Domain model
 
 To better understand the context of the software system, it is very useful to have a simple UML class diagram with all the key concepts (names, attributes) and relationships involved of the problem domain addressed by your module. 
@@ -130,13 +99,3 @@ Example:
   <img src="https://github.com/LEIC-ES-2021-22/2LEIC04T1/blob/main/images/Domain_Model.png"/>
 </p>
 
-
-Classes:
-Utilizador {id, nome}
-Unidade Curricular {id, nome, vagas}
-Turma {numero, vagas, horario}
-
-Associações:
-Utilizador * -- * Unidade Curricular
-Utilizador * -- * Turma
-Unidade Curricular * -- * Turma
