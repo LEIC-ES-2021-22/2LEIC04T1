@@ -4,13 +4,8 @@ Com a nossa aplicação PickUP, pretendemos otimizar o uso de certas funções r
 No projeto, serão implementadas as funções de inscrição nas unidades curriculares, a possibilidade de alteração das unidades curriculares a que o aluno está inscrito, a escolha de turmas, a visualização do horário, assim como, a visualização do horário relativo a cada unidade curricular.
 
 ### Logical architecture
-The purpose of this subsection is to document the high-level logical structure of the code (Logical View), using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
 
-It can be beneficial to present the system both in a horizontal or vertical decomposition:
-* horizontal decomposition may define layers and implementation concepts, such as the user interface, business logic and concepts; 
-* vertical decomposition can define a hierarchy of subsystems that cover all layers of implementation.
-
-Example of _UML package diagram_ showing a _logical view_ of the Eletronic Ticketing System (to be accompanied by a short description of each package):
+Example of _UML package diagram_ showing a _logical view_ of the PickUp App:
 
  <p align="center" justify="center">
   <img src="/images/Logical_View.png"/>
@@ -29,7 +24,7 @@ iteracting with Sigarra's DataBase
 
 2. Inside Sigarra Platform package:
     
-    -Sigarra Backend: package containg Sigarra's Databases needed for implementing the app, comunication with Data base is done by UniApp
+    - Sigarra Backend: package containg Sigarra's Databases needed for implementing the app, comunication with Data base is done by UniApp
 
 
 ### Physical architecture
