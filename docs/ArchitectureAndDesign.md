@@ -1,7 +1,7 @@
 ## Architecture and Design
 
 Com a nossa aplicação PickUP, pretendemos otimizar o uso de certas funções relativas à inscrição dos alunos nas turmas e unidades curriculares em cada ano letivo.
-No projeto, serão implementadas as funções de inscrição nas unidades curriculares, a possibilidade de alteração das unidades curriculares, a esolha de turmas, a visualização do horário, assim como, a visualização do horário relativo a cada unidade curricular.
+No projeto, serão implementadas as funções de inscrição nas unidades curriculares, a possibilidade de alteração das unidades curriculares a que o aluno está inscrito, a escolha de turmas, a visualização do horário, assim como, a visualização do horário relativo a cada unidade curricular.
 
 ### Logical architecture
 The purpose of this subsection is to document the high-level logical structure of the code (Logical View), using a UML diagram with logical packages, without the worry of allocating to components, processes or machines.
