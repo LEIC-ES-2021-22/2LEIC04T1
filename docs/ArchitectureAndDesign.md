@@ -12,7 +12,25 @@ It can be beneficial to present the system both in a horizontal or vertical deco
 
 Example of _UML package diagram_ showing a _logical view_ of the Eletronic Ticketing System (to be accompanied by a short description of each package):
 
-![LogicalView](https://user-images.githubusercontent.com/9655877/160585416-b1278ad7-18d7-463c-b8c6-afa4f7ac7639.png)
+ <p align="center" justify="center">
+  <img src="/images/Logical_View.png"/>
+</p>
+
+
+In this Logical View we can see several packages required for the architecture of PickUP:
+
+1. Inside PickUP App package:
+
+    - PickUP UI Interface: Package containing all the visual features of the app like Buttons, Menus, Webviews, etc...
+    - PickUp Class Atribution Logic: Package containing all the code necessary to assigin classes to the user, it 	contains all the logic and procedures regarding this atribuition.
+    - PickUP Curricular Units Logic:Package containing all the code necessary to assigin Curricular Units to the 	user, it contains all the logic and procedures regarding this atribuition.
+    - PickUp DataBase schema: Package Refering to the UniApp that takes care of the backend features of the app like 
+iteracting with Sigarra's DataBase
+
+2. Inside Sigarra Platform package:
+    
+    -Sigarra Backend: package containg Sigarra's Databases needed for implementing the app, comunication with Data base is done by UniApp
+
 
 ### Physical architecture
 The goal of this subsection is to document the high-level physical structure of the software system (machines, connections, software components installed, and their dependencies) using UML deployment diagrams (Deployment View) or component diagrams (Implementation View), separate or integrated, showing the physical structure of the system.
