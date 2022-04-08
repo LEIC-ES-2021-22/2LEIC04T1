@@ -32,7 +32,7 @@ iteracting with Sigarra's DataBase
 Example of UML deployment diagram showing a deployment view of the PickUP App:
 
  <p align="center" justify="center">
-  <img src="/images/deployment_View.png"/>
+  <img src="/images/physical architecture.png"/>
 </p>
 
 
