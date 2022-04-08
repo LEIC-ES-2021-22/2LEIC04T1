@@ -35,6 +35,15 @@ Example of UML deployment diagram showing a deployment view of the PickUP App:
   <img src="/images/physical architecture.png"/>
 </p>
 
+In this Deployment View we can see machines, connections, software components installed, and their dependencies.
+
+We have present in the diagram:
+
+ - The mobile phone used by the student to access the PickUp App
+ - The Application (PickUP)
+ - The database of the App
+ - The backend from sigarra where the App takes information from
+ - The processes executed by the App (Class atribution and Curricular Units atribution)
 
 
 ### Vertical prototype
