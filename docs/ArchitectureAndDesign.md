@@ -47,11 +47,7 @@ At this phase, instead of a complete user story, you can simply implement a feat
 
  <p align="center" justify="center">
   <img src="/images/Vertical_prototype_Text.png"/>
-</p>
- <p align="center" justify="center">
   <img src="/images/Vertical_prototype_button.png"/>
-</p>
- <p align="center" justify="center">
   <img src="/images/Vertical_prototype_webview.png"/>
 </p>
 
