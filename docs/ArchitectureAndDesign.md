@@ -49,3 +49,14 @@ To help on validating all the architectural, design and technological decisions 
 In this subsection please describe which feature you have implemented, and how, together with a snapshot of the user interface, if applicable.
 
 At this phase, instead of a complete user story, you can simply implement a feature that demonstrates thay you can use the technology, for example, show a screen with the app credits (name and authors).
+
+ <p align="center" justify="center">
+  <img src="/images/Vertical_prototype_Text.png"/>
+</p>
+ <p align="center" justify="center">
+  <img src="/images/Vertical_prototype_button.png"/>
+</p>
+ <p align="center" justify="center">
+  <img src="/images/Vertical_prototype_webview.png"/>
+</p>
+
