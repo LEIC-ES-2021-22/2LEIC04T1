@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -89,6 +90,18 @@ class _MyHomePageState extends State<MyHomePage> {
               style: TextStyle(fontSize: 30),
               textAlign: TextAlign.center,
             ),
+            Container(
+              margin: EdgeInsets.all(25),
+              child: FlatButton(
+                child: Text('LogIn', style: TextStyle(fontSize: 20.0),),
+                color: Colors.blueAccent,
+                textColor: Colors.white,
+                onPressed: () {},
+              ),
+            ),
+            Expanded(child: WebView(
+              initialUrl: 'https://sigarra.up.pt/feup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=484425',
+            ))
           ],
         ),
       ),
