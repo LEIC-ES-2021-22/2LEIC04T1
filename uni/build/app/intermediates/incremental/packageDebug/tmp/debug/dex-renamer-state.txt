@@ -1,0 +1,4 @@
+#Tue May 10 16:51:15 BST 2022
+base.0=C\:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\UNI_App\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
