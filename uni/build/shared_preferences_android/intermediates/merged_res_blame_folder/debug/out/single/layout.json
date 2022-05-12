@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\UNI_App\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
-        "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\custom_dialog.xml"
-    },
-    {
-        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\UNI_App\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\UNI_App\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
-        "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\UNI_App\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\UNI_App\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\UNI_App\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
         "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\shared_preferences_android\\intermediates\\res\\merged\\debug\\layout\\custom_dialog.xml",
+        "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\layout\\custom_dialog.xml"
     }
 ]

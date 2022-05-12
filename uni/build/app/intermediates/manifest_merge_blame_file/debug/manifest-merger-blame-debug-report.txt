@@ -12,20 +12,20 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\android\app\src\main\AndroidManifest.xml:33:5-66
-14-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\android\app\src\main\AndroidManifest.xml:33:22-64
+14-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:33:5-66
+14-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:33:22-64
 15    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
-15-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\android\app\src\main\AndroidManifest.xml:34:5-72
-15-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\android\app\src\main\AndroidManifest.xml:34:22-70
+15-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:34:5-72
+15-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:34:22-70
 16    <uses-permission android:name="android.permission.READ_CALENDAR" />
-16-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\android\app\src\main\AndroidManifest.xml:35:5-71
-16-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\android\app\src\main\AndroidManifest.xml:35:22-69
+16-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:35:5-71
+16-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:35:22-69
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
-17-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
+17-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+17-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
 18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-18-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-76
-18-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-73
+18-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-76
+18-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-73
 19    <!--
 20 io.flutter.app.FlutterApplication is an android.app.Application that
 21         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -66,13 +66,13 @@
 55            android:value="2" />
 56
 57        <activity
-57-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+57-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 58            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-58-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+58-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 59            android:exported="false"
-59-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+59-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 60            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-60-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\UNI_App\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+60-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 61
 62        <uses-library
 62-->[androidx.window:window:1.0.0-beta04] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\83cb8bbc532cffa14556003fd4bbf50b\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
