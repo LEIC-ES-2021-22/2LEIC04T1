@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
+            "outputFile": "C:\\Users\\frant\\OneDrive\\Ambiente de Trabalho\\2LEIC04T1\\uni\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pl\\values-pl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\values-pl\\values-pl.xml",
+                    "source": "C:\\Users\\frant\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\values-pl\\values-pl.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
