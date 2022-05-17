@@ -28,14 +28,22 @@ iteracting with Sigarra's DataBase
 
 
 ### Physical architecture
-The goal of this subsection is to document the high-level physical structure of the software system (machines, connections, software components installed, and their dependencies) using UML deployment diagrams (Deployment View) or component diagrams (Implementation View), separate or integrated, showing the physical structure of the system.
 
-It should describe also the technologies considered and justify the selections made. Examples of technologies relevant for uni4all are, for example, frameworks for mobile applications (such as Flutter).
+Example of UML deployment diagram showing a deployment view of the PickUP App:
 
-Example of _UML deployment diagram_ showing a _deployment view_ of the Eletronic Ticketing System (please notice that, instead of software components, one should represent their physical/executable manifestations for deployment, called artifacts in UML; the diagram should be accompanied by a short description of each node and artifact):
+ <p align="center" justify="center">
+  <img src="/images/physical architecture.png"/>
+</p>
 
-![DeploymentView](https://user-images.githubusercontent.com/9655877/160592491-20e85af9-0758-4e1e-a704-0db1be3ee65d.png)
+In this Deployment View we can see machines, connections, software components installed, and their dependencies.
 
+We have present in the diagram:
+
+ - The mobile phone used by the student to access the PickUp App
+ - The Application (PickUP)
+ - The database of the App
+ - The backend from sigarra where the App takes information from
+ - The processes executed by the App (Class atribution and Curricular Units atribution)
 
 
 ### Vertical prototype
@@ -47,11 +55,7 @@ At this phase, instead of a complete user story, you can simply implement a feat
 
  <p align="center" justify="center">
   <img src="/images/Vertical_prototype_Text.png"/>
-</p>
- <p align="center" justify="center">
   <img src="/images/Vertical_prototype_button.png"/>
-</p>
- <p align="center" justify="center">
   <img src="/images/Vertical_prototype_webview.png"/>
 </p>
 
