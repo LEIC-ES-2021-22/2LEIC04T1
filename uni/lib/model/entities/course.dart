@@ -8,31 +8,39 @@
 /// - The date of the `firstEnrollment`
 /// - The course `state`
 class Course {
-  final int id;
-  final int festId;
-  final String name;
-  final String abbreviation;
-  final String currYear;
-  final int firstEnrollment;
-  final String state;
+  int id;
+  int festId;
+  String name;
+  String abbreviation;
+  String currYear;
+  int firstEnrollment;
+  String state;
 
-  Course(
-      {int this.id,
-      int this.festId,
-      String this.name,
-      String this.abbreviation,
-      String this.currYear,
-      int this.firstEnrollment,
-      String this.state = ''});
+  List<String> regent_teachers;
+
+  Course(int id, String name, String abbreviation, String currYear, int firstEnrollment, String state, List<String> regentTeachers) {
+      this.id = id;
+      this.festId = 1;
+      this.name = name;
+      this.abbreviation = abbreviation;
+      this.currYear = currYear;
+      this.firstEnrollment = firstEnrollment;
+      this.state = state;
+      List<String> regentTeachers = regent_teachers;
+      }
+
 
   /// Creates a new instance from a JSON object.
   static Course fromJson(dynamic data) {
     return Course(
-        id: data['cur_id'],
-        festId: data['fest_id'],
-        name: data['cur_nome'],
-        currYear: data['ano_curricular'],
-        firstEnrollment: data['fest_a_lect_1_insc']);
+        data['cur_id'],
+        data['cur_nome'],
+        '',
+        data['ano_curricular'],
+        data['fest_a_lect_1_insc'],
+        '',
+        []
+    );
   }
 
   /// Converts this course to a map.

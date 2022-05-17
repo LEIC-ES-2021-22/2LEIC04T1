@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:uni/controller/load_info.dart';
 import 'package:uni/controller/exam.dart';
+import 'package:uni/controller/mock_get_info.dart';
 import 'package:uni/model/app_state.dart';
 import 'package:uni/model/entities/exam.dart';
 import 'package:flutter/material.dart';
@@ -10,15 +12,29 @@ import 'package:uni/view/Widgets/row_container.dart';
 import 'package:uni/view/Widgets/schedule_row.dart';
 import 'package:uni/view/Widgets/title_card.dart';
 
+import 'dart:io';
+import 'package:uni/model/entities/course.dart';
+import 'package:flutter/material.dart';
+import 'package:uni/view/Pages/unnamed_page_view.dart';
+
+//import '../../lib/controller/mock_get_info.dart';
+import '../../model/entities/course.dart';
+
+import 'package:uni/view/Widgets/account_info_card.dart';
+import 'package:uni/view/Widgets/course_info_card.dart';
+import 'package:uni/view/Widgets/print_info_card.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 import '../../model/entities/lecture.dart';
 import '../Widgets/schedule_slot.dart';
 
 class EnrollmentsPageView extends StatefulWidget {
+  //final List<Course> courses = get_courses();
   @override
-  State<StatefulWidget> createState() => EnrollmentPageViewState();
+  State<StatefulWidget> createState() => EnrollmentPageViewState(/*courses: courses*/);
 }
 
-Widget Build_Course_card(String Name, String Schedule, String Teacher){
+Widget Build_Course_card(Course course){
 
   return Container(
         width: 300,
@@ -36,21 +52,28 @@ Widget Build_Course_card(String Name, String Schedule, String Teacher){
                ListTile(
                 //leading: Icon(Icons.album, size: 60),
                 title: Text(
-                    Name,
-                    style: TextStyle(fontSize: 30.0)
+                    course.name,
+                    style: TextStyle(fontSize: 30.0, color: Colors.black, fontWeight: FontWeight.bold)
                 ),
                 subtitle: Text(
-                    Teacher,
-                    style: TextStyle(fontSize: 18.0)
+                    course.currYear,
+                    style: TextStyle(fontSize: 18.0, color: Colors.lightBlueAccent)
                 ),
               ),
-              Positioned(
-                top: 100,
-                child: ElevatedButton(
+                Align(
+                  alignment: Alignment.bottomCenter,
+                  child:ElevatedButton(
+                    style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
                   child: const Text('Horário'),
-                  onPressed: () {/* ... */},
+                  //Solução temporária
+                  onPressed: () async {
+                    final url = course.id;
+/*                    if(await canLaunch(url)){
+                      await launch(url,forceSafariVC: true, forceWebView: true, enableJavaScript: true);
+                    }*/
+                  }, //Use navigator to open new page with uc info
                 )
-              )
+                )
             ],
           ),
         ),
@@ -59,52 +82,18 @@ Widget Build_Course_card(String Name, String Schedule, String Teacher){
 }
 
 
-class Course {
-  String Name;
-  String Schedule;
-  String Teacher;
-
-  Course(String Name, String Schedule, String Teacher) {
-    this.Name = Name;
-    this.Schedule = Schedule;
-    this.Teacher = Teacher;
-  }
-}
-
-
 /// Tracks the state of `Enrollment`.
-class EnrollmentPageViewState extends SecondaryPageViewState {
+class EnrollmentPageViewState extends UnnamedPageView {
   final double borderRadius = 10.0;
 
-
-  List<Course> getCourses(lectures, BuildContext context) {
-    List<Course> courses = <Course>[];
-    Course esof = Course("Engenharia de Software",
-        "https://sigarra.up.pt/feup/pt/hor_geral.ucurr_view?pv_ocorrencia_id=484425&pv_ano_lectivo=2021&pv_periodos=3",
-        "João Pascoal Faria");
-    Course lcom = Course("Laboratório de Computadores",
-        "https://sigarra.up.pt/feup/pt/hor_geral.ucurr_view?pv_ocorrencia_id=484426&pv_ano_lectivo=2021&pv_periodos=3",
-        "Pedro Souto");
-    courses.add(esof);
-    courses.add(lcom);
-
-
-/*    final List<String> courses = <String>[];
-    for (int i = 0; i < lectures.length; i++) {
-      final Lecture lecture = lectures[i];
-      courses.add(lecture.subject);
-    }*/
-    return courses;
-  }
+  final List<Course> courses = get_courses();
 
   @override
   Widget getBody(BuildContext context) {
-    dynamic lectures;
 
-    List<Course> courses = getCourses(lectures, context);
     List<Widget> c = <Widget>[];
-    for (int i = 0; i < courses.length; i++) {
-      c.add(Build_Course_card(courses[i].Name, courses[i].Schedule, courses[i].Teacher));
+    for (var i = 0; i < courses.length; i++) {
+      c.add(Build_Course_card(courses[i]));
     }
     return ListView(
         children: <Widget>[
@@ -117,24 +106,6 @@ class EnrollmentPageViewState extends SecondaryPageViewState {
         ]
     );
 
-
-/*    final MediaQueryData queryData = MediaQuery.of(context);
-    //dynamic lectures;
-    List<String> courses = getCourses(lectures, context);
-    List<Widget> c;
-    for (int i = 0; i < courses.length; i++) {
-        c.add(Text(courses[i]));
-    }
-    return ListView(
-      children: <Widget>[
-    Container(
-    child: Column(
-      mainAxisSize: MainAxisSize.max,
-      children: c
-    )
-    )
-    ]
-    );*/
   }
 
 
