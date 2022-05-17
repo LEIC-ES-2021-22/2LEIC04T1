@@ -18,6 +18,7 @@ import 'package:uni/view/Pages/enrollment_page_view.dart';
 import 'package:uni/view/Pages/exams_page_view.dart';
 import 'package:uni/view/Pages/home_page_view.dart';
 import 'package:uni/view/Pages/logout_route.dart';
+import 'package:uni/view/Pages/pickup_page_view.dart';
 import 'package:uni/view/Pages/splash_page_view.dart';
 import 'package:uni/view/Widgets/page_transition.dart';
 import 'package:uni/view/navigation_service.dart';
@@ -94,7 +95,7 @@ class MyAppState extends State<MyApp> {
                     page: ExamsPageView(), settings: settings);
               case '/' + Constants.navEnrollments:
                 return PageTransition.makePageTransition(
-                    page: EnrollmentsPageView(), settings: settings);
+                    page: PickupPageView(), settings: settings);
               case '/' + Constants.navStops:
                 return PageTransition.makePageTransition(
                     page: BusStopNextArrivalsPage(), settings: settings);

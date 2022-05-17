@@ -19,7 +19,7 @@ void main() {
     final mockStore = MockStore();
 
     final profile = Profile();
-    profile.courses = [Course(id: 7474)];
+    profile.courses = [Course(7474,"","","",0,"",[])];
     final content = {
       'session': Session(authenticated: true),
       'profile': profile,

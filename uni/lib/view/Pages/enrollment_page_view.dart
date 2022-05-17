@@ -6,6 +6,7 @@ import 'package:uni/model/app_state.dart';
 import 'package:uni/model/entities/exam.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
+import 'package:uni/model/utils/day_of_week.dart';
 import 'package:uni/view/Pages/secondary_page_view.dart';
 import 'package:uni/view/Widgets/exam_page_title_filter.dart';
 import 'package:uni/view/Widgets/row_container.dart';
@@ -35,10 +36,14 @@ class EnrollmentsPageView extends StatefulWidget {
 }
 
 Widget Build_Course_card(Course course){
+  String regentt = "";
+  for(int i = 0; i < course.regent_teachers.length; i++){
+    regentt += course.regent_teachers[i].toString() + "\n";
+  }
 
   return Container(
         width: 300,
-        height: 200,
+        height: 270,
         padding: new EdgeInsets.all(10.0),
         child: Card(
           shape: RoundedRectangleBorder(
@@ -49,17 +54,22 @@ Widget Build_Course_card(Course course){
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-               ListTile(
                 //leading: Icon(Icons.album, size: 60),
-                title: Text(
+                Text(
                     course.name,
-                    style: TextStyle(fontSize: 30.0, color: Colors.black, fontWeight: FontWeight.bold)
+                    style: TextStyle(fontSize: 30.0, color: Colors.black, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center
                 ),
-                subtitle: Text(
-                    course.currYear,
-                    style: TextStyle(fontSize: 18.0, color: Colors.lightBlueAccent)
-                ),
+              Text(
+                  course.currYear,
+                  style: TextStyle(fontSize: 18.0, color: Colors.black45),
+                  textAlign: TextAlign.left
               ),
+                Text(
+                    "\n" +regentt,
+                    style: TextStyle(fontSize: 18.0, color: Colors.lightBlueAccent),
+                    textAlign: TextAlign.left
+                ),
                 Align(
                   alignment: Alignment.bottomCenter,
                   child:ElevatedButton(
@@ -67,10 +77,10 @@ Widget Build_Course_card(Course course){
                   child: const Text('Horário'),
                   //Solução temporária
                   onPressed: () async {
-                    final url = course.id;
-/*                    if(await canLaunch(url)){
+                    final url = "https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=" + course.id.toString();
+                    if(await canLaunch(url)){
                       await launch(url,forceSafariVC: true, forceWebView: true, enableJavaScript: true);
-                    }*/
+                    }
                   }, //Use navigator to open new page with uc info
                 )
                 )

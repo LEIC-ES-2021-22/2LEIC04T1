@@ -57,7 +57,7 @@ void main() {
 
     Future testSchedule(WidgetTester tester) async {
       final profile = Profile();
-      profile.courses = [Course(id: 7474)];
+      profile.courses = [Course(7474,"","","",0,"",[])];
       final store = Store<AppState>(appReducers,
           initialState: AppState({
             'session': Session(authenticated: true),

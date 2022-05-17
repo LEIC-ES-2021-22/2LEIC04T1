@@ -43,7 +43,7 @@ void main() {
         .forEach((type) => filteredExams[type] = true);
 
     final profile = Profile();
-    profile.courses = [Course(id: 7474)];
+    profile.courses = [Course(7474,"","","",0,"",[])];
 
     testWidgets('Exams', (WidgetTester tester) async {
       final store = Store<AppState>(appReducers,

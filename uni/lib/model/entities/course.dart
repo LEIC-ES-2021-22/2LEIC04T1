@@ -26,7 +26,7 @@ class Course {
       this.currYear = currYear;
       this.firstEnrollment = firstEnrollment;
       this.state = state;
-      List<String> regentTeachers = regent_teachers;
+      this.regent_teachers = regentTeachers;
       }
 
 

@@ -30,7 +30,7 @@ void main() {
     final mockResponse = MockResponse();
 
     final profile = Profile();
-    profile.courses = [Course(id: 7474)];
+    profile.courses = [Course(7474,"","","",0,"",[])];
     final content = {
       'session': Session(authenticated: true),
       'currUcs': [sopeCourseUnit, sdisCourseUnit],
