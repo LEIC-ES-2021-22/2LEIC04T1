@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:uni/model/utils/day_of_week.dart';
 import 'package:uni/view/Pages/secondary_page_view.dart';
+import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
 import 'package:uni/view/Widgets/exam_page_title_filter.dart';
 import 'package:uni/view/Widgets/row_container.dart';
 import 'package:uni/view/Widgets/schedule_row.dart';
@@ -32,91 +33,86 @@ import '../Widgets/schedule_slot.dart';
 class EnrollmentsPageView extends StatefulWidget {
   //final List<Course> courses = get_courses();
   @override
-  State<StatefulWidget> createState() => EnrollmentPageViewState(/*courses: courses*/);
+  State<StatefulWidget> createState() =>
+      EnrollmentPageViewState(/*courses: courses*/);
 }
 
-Widget Build_Course_card(Course course){
+Widget Build_Course_card(Course course) {
   String regentt = "";
-  for(int i = 0; i < course.regent_teachers.length; i++){
+  for (int i = 0; i < course.regent_teachers.length; i++) {
     regentt += course.regent_teachers[i].toString() + "\n";
   }
 
   return Container(
-        width: 300,
-        height: 270,
-        padding: new EdgeInsets.all(10.0),
-        child: Card(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          color: Colors.grey,
-          elevation: 10,
+    width: 300,
+    height: 270,
+    padding: new EdgeInsets.all(10.0),
+    child: Card(
+        //possible improvement: dinamically change cards height acording to its contents
+        margin: EdgeInsets.zero,
+        shape: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15.0),
+          borderSide: BorderSide.none,
+        ),
+        color: Colors.grey,
+        elevation: 10,
+        child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-                //leading: Icon(Icons.album, size: 60),
-                Text(
-                    course.name,
-                    style: TextStyle(fontSize: 30.0, color: Colors.black, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center
-                ),
-              Text(
-                  course.currYear,
+              //leading: Icon(Icons.album, size: 60),
+              Text(course.name,
+                  style: TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center),
+              Text(course.currYear,
                   style: TextStyle(fontSize: 18.0, color: Colors.black45),
-                  textAlign: TextAlign.left
-              ),
-                Text(
-                    "\n" +regentt,
-                    style: TextStyle(fontSize: 18.0, color: Colors.lightBlueAccent),
-                    textAlign: TextAlign.left
-                ),
-                Align(
+                  textAlign: TextAlign.left),
+              Text("\n" + regentt,
+                  style:
+                      TextStyle(fontSize: 18.0, color: Colors.lightBlueAccent),
+                  textAlign: TextAlign.left),
+              Align(
                   alignment: Alignment.bottomCenter,
-                  child:ElevatedButton(
-                    style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
-                  child: const Text('Horário'),
-                  //Solução temporária
-                  onPressed: () async {
-                    final url = "https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=" + course.id.toString();
-                    if(await canLaunch(url)){
-                      await launch(url,forceSafariVC: true, forceWebView: true, enableJavaScript: true);
-                    }
-                  }, //Use navigator to open new page with uc info
-                )
-                )
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.red)),
+                    child: const Text('Horário'),
+                    //Solução temporária
+                    onPressed: () async {
+                      final url =
+                          "https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=" +
+                              course.id.toString();
+                      if (await canLaunch(url)) {
+                        await launch(url,
+                            forceSafariVC: true,
+                            forceWebView: true,
+                            enableJavaScript: true);
+                      }
+                    }, //Use navigator to open new page with uc info
+                  ))
             ],
           ),
-        ),
-      );
-
+        )),
+  );
 }
 
-
 /// Tracks the state of `Enrollment`.
-class EnrollmentPageViewState extends UnnamedPageView {
+class EnrollmentPageViewState extends UnnamedPickUPPageView {
   final double borderRadius = 10.0;
 
   final List<Course> courses = get_courses();
 
   @override
   Widget getBody(BuildContext context) {
-
     List<Widget> c = <Widget>[];
+    c.add(Text("Unidades Curriculares atuais:", style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
     for (var i = 0; i < courses.length; i++) {
       c.add(Build_Course_card(courses[i]));
     }
-    return ListView(
-        children: <Widget>[
-          Container(
-              child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  children: c
-              )
-          )
-        ]
-    );
-
+    return ListView(children: <Widget>[Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))]);
   }
-
-
 }

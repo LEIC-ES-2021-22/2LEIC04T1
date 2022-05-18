@@ -16,10 +16,7 @@ class PickupPageViewState extends GeneralPageViewState {
         color: Colors.red, //background color
         title: "PickUP",
         home: Scaffold(
-          appBar: AppBar(
-            title: Text("PickUP"),
-            backgroundColor: Colors.red,
-          ),
+        appBar: buildPickUPAppBar(context),
           body: Column(children: <Widget>[
             SizedBox(
               height: 30, // <-- SEE HERE

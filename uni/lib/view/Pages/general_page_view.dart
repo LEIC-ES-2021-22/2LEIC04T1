@@ -113,6 +113,45 @@ abstract class GeneralPageViewState extends State<StatefulWidget> {
     );
   }
 
+  AppBar buildPickUPAppBar(BuildContext context) {
+    final MediaQueryData queryData = MediaQuery.of(context);
+
+    return AppBar(
+      bottom: PreferredSize(
+        preferredSize: Size.zero,
+        child: Container(
+          margin: EdgeInsets.only(left: borderMargin, right: borderMargin),
+          color: Theme.of(context).dividerColor,
+          height: 1.5,
+        ),
+      ),
+      elevation: 0,
+      iconTheme: IconThemeData(color: Theme.of(context).accentColor),
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      titleSpacing: 0.0,
+      title: ButtonTheme(
+          minWidth: 0,
+          padding: EdgeInsets.only(left: 0),
+          materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+          shape: RoundedRectangleBorder(),
+          child: TextButton(
+            onPressed: () {
+              final currentRouteName = ModalRoute.of(context).settings.name;
+              if (currentRouteName != Constants.navPersonalArea) {
+                Navigator.pushNamed(context, '/${Constants.navPersonalArea}');
+              }
+            },
+            child: Image.asset(
+              'assets/images/pickup logo.png',
+              height: queryData.size.height / 25,
+            ),
+          )),
+      actions: <Widget>[
+        getTopRightButton(context),
+      ],
+    );
+  }
+
   // Gets a round shaped button with the photo of the current user.
   Widget getTopRightButton(BuildContext context) {
     return FutureBuilder(
