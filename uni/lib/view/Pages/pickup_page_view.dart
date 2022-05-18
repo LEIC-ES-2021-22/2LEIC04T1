@@ -22,13 +22,13 @@ class PickupPageViewState extends GeneralPageViewState {
           ),
           body: Column(children: <Widget>[
             SizedBox(
-              height: 20, // <-- SEE HERE
+              height: 30, // <-- SEE HERE
             ),
             RichText(
                 textAlign: TextAlign.center,
                 text: TextSpan(
                     style: new TextStyle(
-                        fontSize: 30.0,
+                        fontSize: 36.0,
                         color: Colors.red,
                         fontWeight: FontWeight.bold),
                     children: <TextSpan>[
