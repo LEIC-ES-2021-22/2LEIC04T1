@@ -61,30 +61,34 @@ class PickupPageViewState extends GeneralPageViewState {
 
 final List<AppAction> actions = [
   AppAction(
+    color: Colors.redAccent,
     label: 'Inscrição nas Unidades Curriculares',
+    labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (_) => EnrollmentsPageView()));
     },
   ),
   AppAction(
-    label: 'Alteração das Unidades Curriculare',
+    color: Colors.redAccent,
+    label: 'Alteração das Unidades Curriculares',
+    labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (_) => MailScreen()));
     },
   ),
   AppAction(
-    color: Colors.white,
+    color: Colors.redAccent,
     label: 'Inscrição nas Turmas',
-    labelColor: Colors.redAccent,
+    labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (_) => UrgentScreen()));
     },
   ),
   AppAction(
-    color: Colors.green.shade200,
+    color: Colors.redAccent,
     label: 'Ver Horário',
     labelColor: Colors.black,
     callback: (context) {
@@ -93,7 +97,7 @@ final List<AppAction> actions = [
     },
   ),
   AppAction(
-    color: Colors.green.shade200,
+    color: Colors.redAccent,
     label: 'Ver Horário das Unidades Curriculares',
     labelColor: Colors.black,
     callback: (context) {
@@ -148,11 +152,11 @@ class ActionButton extends StatelessWidget {
             backgroundColor: action.color,
             padding: const EdgeInsets.all(16.0),
             alignment: Alignment.center,
-            fixedSize: Size(300, 70)), //change buttons size
+            fixedSize: Size(300, 80)), //change buttons size
         //label: Text(action.label, style: TextStyle(color: action.labelColor)),
         child: Text(action.label,
             textAlign: TextAlign.center,
-            style: TextStyle(color: action.labelColor, fontSize: 16)));
+            style: TextStyle(color: action.labelColor, fontSize: 20)));
   }
 }
 
