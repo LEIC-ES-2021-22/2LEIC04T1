@@ -46,9 +46,6 @@ class PickupPageViewState extends GeneralPageViewState {
                 alignment: WrapAlignment.center,
                 runAlignment: WrapAlignment.center,
                 crossAxisAlignment: WrapCrossAlignment.center,
-/*        maxCrossAxisExtent: 120,
-          crossAxisSpacing: 15.0,
-          mainAxisSpacing: 15.0,*/
                 children: actions
                     .map((action) => ActionButton(action: action))
                     .toList(),
