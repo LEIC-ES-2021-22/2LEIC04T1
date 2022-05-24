@@ -14,8 +14,12 @@ AppState appReducers(AppState state, dynamic action) {
     return setExamsStatus(state, action);
   } else if (action is SetScheduleStatusAction) {
     return setScheduleStatus(state, action);
+  } else if (action is SetScheduleCourseStatusAction) {
+    return setScheduleCourseStatus(state, action);
   } else if (action is SetScheduleAction) {
     return setSchedule(state, action);
+  } else if (action is SetScheduleCourseAction) {
+    return setScheduleCourse(state, action);
   } else if (action is SaveProfileAction) {
     return saveProfile(state, action);
   } else if (action is SaveProfileStatusAction) {
@@ -98,9 +102,19 @@ AppState setSchedule(AppState state, SetScheduleAction action) {
   return state.cloneAndUpdateValue('schedule', action.lectures);
 }
 
+AppState setScheduleCourse(AppState state, SetScheduleCourseAction action) {
+  Logger().i('setting course schedule: ' + action.lectures.length.toString());
+  return state.cloneAndUpdateValue('courseschedule', action.lectures);
+}
+
 AppState setScheduleStatus(AppState state, SetScheduleStatusAction action) {
   Logger().i('setting schedule status: ' + action.status.toString());
   return state.cloneAndUpdateValue('scheduleStatus', action.status);
+}
+
+AppState setScheduleCourseStatus(AppState state, SetScheduleCourseStatusAction action) {
+  Logger().i('setting course schedule status: ' + action.status.toString());
+  return state.cloneAndUpdateValue('coursescheduleStatus', action.status);
 }
 
 AppState saveProfile(AppState state, SaveProfileAction action) {

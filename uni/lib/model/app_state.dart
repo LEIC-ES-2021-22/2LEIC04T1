@@ -17,10 +17,12 @@ class AppState {
   Map getInitialContent() {
     return {
       'schedule': <Lecture>[],
+      'courseschedule': <Lecture>[],
       'exams': <Exam>[],
       'restaurants': <Restaurant>[],
       'filteredExam': Map<String, bool>(),
       'scheduleStatus': RequestStatus.none,
+      'coursescheduleStatus': RequestStatus.none,
       'loginStatus': RequestStatus.none,
       'examsStatus': RequestStatus.none,
       'selected_page': Constants.navPersonalArea,

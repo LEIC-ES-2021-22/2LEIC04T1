@@ -3,6 +3,7 @@ import 'package:uni/view/Pages/altera%C3%A7ao_UCS_page_view.dart';
 import 'package:uni/view/Pages/incricao_UCS_page_view.dart';
 import 'package:uni/view/Pages/incricao_turmas_UCS_page_view.dart';
 import 'package:uni/view/Pages/show_UCS_schedule_page_view.dart';
+import 'package:uni/model/schedule_course_page_model.dart';
 import 'package:uni/view/Pages/general_page_view.dart';
 import 'package:uni/view/Widgets/main_cards_list.dart';
 
@@ -66,7 +67,8 @@ final List<AppAction> actions = [
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => show_UCS_schedule()));
+          .push(MaterialPageRoute(builder: (_) => ScheduleCoursePage()));
+          //.push(MaterialPageRoute(builder: (_) => show_UCS_schedule()));
     },
   ),
   AppAction(

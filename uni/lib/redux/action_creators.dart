@@ -262,7 +262,7 @@ ThunkAction<AppState> getUserSchedule(
     {ScheduleFetcher fetcher}) {
   return (Store<AppState> store) async {
     try {
-      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.busy));
+      store.dispatch(SetScheduleStatusAction(RequestStatus.busy));
 
       final List<Lecture> lectures =
           await getCourseLecturesFromFetcherOrElse(fetcher, store);
@@ -273,11 +273,11 @@ ThunkAction<AppState> getUserSchedule(
         db.saveNewLectures(lectures);
       }
 
-      store.dispatch(SetCourseScheduleAction(lectures));
-      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.successful));
+      store.dispatch(SetScheduleAction(lectures));
+      store.dispatch(SetScheduleStatusAction(RequestStatus.successful));
     } catch (e) {
       Logger().e('Failed to get Schedule: ${e.toString()}');
-      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.failed));
+      store.dispatch(SetScheduleStatusAction(RequestStatus.failed));
     }
     action.complete();
   };
@@ -288,7 +288,7 @@ ThunkAction<AppState> getCourseSchedule(
     {ScheduleFetcher fetcher}) {
   return (Store<AppState> store) async {
     try {
-      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.busy));
+      store.dispatch(SetScheduleCourseStatusAction(RequestStatus.busy));
 
       final List<Lecture> lectures =
           await getLecturesFromFetcherOrElse(fetcher, store);
@@ -299,11 +299,11 @@ ThunkAction<AppState> getCourseSchedule(
         db.saveNewLectures(lectures);
       }
 
-      store.dispatch(SetCourseScheduleAction(lectures));
-      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.successful));
+      store.dispatch(SetScheduleCourseAction(lectures));
+      store.dispatch(SetScheduleCourseStatusAction(RequestStatus.successful));
     } catch (e) {
       Logger().e('Failed to get Schedule: ${e.toString()}');
-      store.dispatch(SetScheduleStatusAction(RequestStatus.failed));
+      store.dispatch(SetScheduleCourseStatusAction(RequestStatus.failed));
     }
     action.complete();
   };
