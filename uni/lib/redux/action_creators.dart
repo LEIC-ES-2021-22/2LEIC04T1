@@ -309,8 +309,18 @@ Future<List<Lecture>> getLecturesFromFetcherOrElse(
         ScheduleFetcher fetcher, Store<AppState> store) =>
     (fetcher?.getLectures(store)) ?? getLectures(store);
 
+Future<List<Lecture>> getCourseLecturesFromFetcherOrElse(
+        ScheduleFetcher fetcher, Store<AppState> store) =>
+    (fetcher?.getCourseLectures(store)) ?? getCourseLectures(store);
+
 Future<List<Lecture>> getLectures(Store<AppState> store) {
   return ScheduleFetcherApi()
+      .getLectures(store)
+      .catchError((e) => ScheduleFetcherHtml().getLectures(store));
+}
+
+Future<List<Lecture>> getCourseLectures(Store<AppState> store) {
+  return ScheduleCourseFetcherApi()
       .getLectures(store)
       .catchError((e) => ScheduleFetcherHtml().getLectures(store));
 }
