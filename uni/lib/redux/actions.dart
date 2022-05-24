@@ -47,7 +47,7 @@ class SetScheduleAction {
 
 class SetScheduleCourseAction {
   List<Lecture> lectures;
-  SetScheduleAction(this.lectures);
+  SetScheduleCourseAction(this.lectures);
 }
 
 class SetScheduleStatusAction {
@@ -57,7 +57,7 @@ class SetScheduleStatusAction {
 
 class SetScheduleCourseStatusAction {
   RequestStatus status;
-  SetScheduleStatusAction(this.status);
+  SetScheduleCourseStatusAction(this.status);
 }
 
 class SetInitialStoreStateAction {
