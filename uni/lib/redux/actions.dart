@@ -45,11 +45,20 @@ class SetScheduleAction {
   SetScheduleAction(this.lectures);
 }
 
+class SetScheduleCourseAction {
+  List<Lecture> lectures;
+  SetScheduleAction(this.lectures);
+}
+
 class SetScheduleStatusAction {
   RequestStatus status;
   SetScheduleStatusAction(this.status);
 }
 
+class SetScheduleCourseStatusAction {
+  RequestStatus status;
+  SetScheduleStatusAction(this.status);
+}
 
 class SetInitialStoreStateAction {
   SetInitialStoreStateAction();
