@@ -51,6 +51,7 @@ Future loadRemoteUserInfoToState(Store<AppState> store) async {
   final Completer<Null> userInfo = Completer(),
       exams = Completer(),
       schedule = Completer(),
+      courseschedule = Completer(),
       printBalance = Completer(),
       fees = Completer(),
       coursesStates = Completer(),
@@ -70,11 +71,13 @@ Future loadRemoteUserInfoToState(Store<AppState> store) async {
   userInfo.future.then((value) {
     store.dispatch(getUserExams(exams, ParserExams(), userPersistentInfo));
     store.dispatch(getUserSchedule(schedule, userPersistentInfo));
+    store.dispatch(getCourseSchedule(courseschedule, userPersistentInfo));
   });
 
   final allRequests = Future.wait([
     exams.future,
     schedule.future,
+    courseschedule.future,
     printBalance.future,
     fees.future,
     coursesStates.future,
