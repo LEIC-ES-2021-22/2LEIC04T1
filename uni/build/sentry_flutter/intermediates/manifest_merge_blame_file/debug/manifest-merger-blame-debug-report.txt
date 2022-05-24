@@ -5,22 +5,22 @@
 5
 6    <uses-sdk
 7        android:minSdkVersion="16"
-7-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml
+7-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml
 8        android:targetSdkVersion="30" />
-8-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml
+8-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml
 9
 10    <application>
-10-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:4:5-10:19
+10-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:4:5-10:19
 11        <provider
-11-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:5:9-9:35
+11-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:5:9-9:35
 12            android:name="io.sentry.android.core.SentryInitProvider"
-12-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:6:13-69
+12-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:6:13-69
 13            android:authorities="${applicationId}.SentryInitProvider"
-13-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:7:13-70
+13-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:7:13-70
 14            android:exported="false"
-14-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:8:13-37
+14-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:8:13-37
 15            tools:node="remove" />
-15-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:9:13-32
+15-->D:\src\flutter\.pub-cache\hosted\pub.dartlang.org\sentry_flutter-5.1.0\android\src\main\AndroidManifest.xml:9:13-32
 16    </application>
 17
 18</manifest>

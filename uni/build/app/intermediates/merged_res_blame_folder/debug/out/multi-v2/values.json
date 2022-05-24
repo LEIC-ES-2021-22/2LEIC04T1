@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "D:\\Utilizador\\Documents\\Faculdade\\ES\\2LEIC04T1\\uni\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Utilizador\\.gradle\\caches\\transforms-2\\files-2.1\\616b51fd43b7e50cf53c169aeb75cc32\\core-1.6.0\\res\\values\\values.xml",
@@ -42,24 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\android\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endColumns": "46",
-                        "endOffsets": "99"
-                    },
-                    "to": {
-                        "startLines": "15",
-                        "startColumns": "4",
-                        "startOffsets": "743",
-                        "endColumns": "46",
-                        "endOffsets": "785"
-                    }
-                },
-                {
-                    "source": "C:\\University\\2 ano\\2 Semestre\\ES\\Projeto  ES\\2LEIC04T1\\uni\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "D:\\Utilizador\\Documents\\Faculdade\\ES\\2LEIC04T1\\uni\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -75,6 +58,23 @@
                         "endLines": "98",
                         "endColumns": "12",
                         "endOffsets": "5801"
+                    }
+                },
+                {
+                    "source": "D:\\Utilizador\\Documents\\Faculdade\\ES\\2LEIC04T1\\uni\\android\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "46",
+                        "endOffsets": "99"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "743",
+                        "endColumns": "46",
+                        "endOffsets": "785"
                     }
                 }
             ]

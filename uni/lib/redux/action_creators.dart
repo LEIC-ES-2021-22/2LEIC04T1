@@ -265,7 +265,7 @@ ThunkAction<AppState> getUserSchedule(
       store.dispatch(SetScheduleStatusAction(RequestStatus.busy));
 
       final List<Lecture> lectures =
-          await getCourseLecturesFromFetcherOrElse(fetcher, store);
+          await getLecturesFromFetcherOrElse(fetcher, store);
 
       // Updates local database according to the information fetched -- Lectures
       if (userPersistentInfo.item1 != '' && userPersistentInfo.item2 != '') {
@@ -291,7 +291,7 @@ ThunkAction<AppState> getCourseSchedule(
       store.dispatch(SetScheduleCourseStatusAction(RequestStatus.busy));
 
       final List<Lecture> lectures =
-          await getLecturesFromFetcherOrElse(fetcher, store);
+          await getCourseLecturesFromFetcherOrElse(fetcher, store);
 
       // Updates local database according to the information fetched -- Lectures
       if (userPersistentInfo.item1 != '' && userPersistentInfo.item2 != '') {
