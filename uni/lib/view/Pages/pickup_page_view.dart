@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:uni/view/Pages/enrollment_page_view.dart';
+import 'package:uni/view/Pages/altera%C3%A7ao_UCS_page_view.dart';
+import 'package:uni/view/Pages/incricao_UCS_page_view.dart';
+import 'package:uni/view/Pages/incricao_turmas_UCS_page_view.dart';
+import 'package:uni/view/Pages/show_UCS_schedule_page_view.dart';
 import 'package:uni/view/Pages/general_page_view.dart';
 import 'package:uni/view/Widgets/main_cards_list.dart';
 
@@ -59,11 +62,11 @@ class PickupPageViewState extends GeneralPageViewState {
 final List<AppAction> actions = [
   AppAction(
     color: Colors.redAccent,
-    label: 'Inscrição nas Unidades Curriculares',
+    label: 'Ver Horário das Unidades Curriculares',
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => EnrollmentsPageView()));
+          .push(MaterialPageRoute(builder: (_) => show_UCS_schedule()));
     },
   ),
   AppAction(
@@ -72,7 +75,7 @@ final List<AppAction> actions = [
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => MailScreen()));
+          .push(MaterialPageRoute(builder: (_) => alteracao_UCS()));
     },
   ),
   AppAction(
@@ -81,7 +84,7 @@ final List<AppAction> actions = [
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => UrgentScreen()));
+          .push(MaterialPageRoute(builder: (_) => incricao_turmas_UCS()));
     },
   ),
   AppAction(
@@ -95,11 +98,11 @@ final List<AppAction> actions = [
   ),
   AppAction(
     color: Colors.redAccent,
-    label: 'Ver Horário das Unidades Curriculares',
+    label: 'Inscrição nas Unidades Curriculares',
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => NewsScreen()));
+          .push(MaterialPageRoute(builder: (_) => incricao_UCS()));
     },
   ),
 ];
