@@ -312,7 +312,7 @@ Future<List<Lecture>> getLecturesFromFetcherOrElse(
 
 Future<List<Lecture>> getCourseLecturesFromFetcherOrElse(
         ScheduleFetcher fetcher, Store<AppState> store) =>
-    (fetcher?.getCourseLectures(store)) ?? getCourseLectures(store);
+    (fetcher?.getLectures(store)) ?? getCourseLectures(store);
 
 Future<List<Lecture>> getLectures(Store<AppState> store) {
   return ScheduleFetcherApi()
