@@ -262,7 +262,33 @@ ThunkAction<AppState> getUserSchedule(
     {ScheduleFetcher fetcher}) {
   return (Store<AppState> store) async {
     try {
-      store.dispatch(SetScheduleStatusAction(RequestStatus.busy));
+      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.busy));
+
+      final List<Lecture> lectures =
+          await getCourseLecturesFromFetcherOrElse(fetcher, store);
+
+      // Updates local database according to the information fetched -- Lectures
+      if (userPersistentInfo.item1 != '' && userPersistentInfo.item2 != '') {
+        final AppLecturesDatabase db = AppLecturesDatabase();
+        db.saveNewLectures(lectures);
+      }
+
+      store.dispatch(SetCourseScheduleAction(lectures));
+      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.successful));
+    } catch (e) {
+      Logger().e('Failed to get Schedule: ${e.toString()}');
+      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.failed));
+    }
+    action.complete();
+  };
+}
+
+ThunkAction<AppState> getCourseSchedule(
+    Completer<Null> action, Tuple2<String, String> userPersistentInfo,
+    {ScheduleFetcher fetcher}) {
+  return (Store<AppState> store) async {
+    try {
+      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.busy));
 
       final List<Lecture> lectures =
           await getLecturesFromFetcherOrElse(fetcher, store);
@@ -273,8 +299,8 @@ ThunkAction<AppState> getUserSchedule(
         db.saveNewLectures(lectures);
       }
 
-      store.dispatch(SetScheduleAction(lectures));
-      store.dispatch(SetScheduleStatusAction(RequestStatus.successful));
+      store.dispatch(SetCourseScheduleAction(lectures));
+      store.dispatch(SetCourseScheduleStatusAction(RequestStatus.successful));
     } catch (e) {
       Logger().e('Failed to get Schedule: ${e.toString()}');
       store.dispatch(SetScheduleStatusAction(RequestStatus.failed));
