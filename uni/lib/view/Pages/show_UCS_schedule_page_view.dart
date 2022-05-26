@@ -9,35 +9,28 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:uni/model/utils/day_of_week.dart';
 import 'package:uni/view/Pages/secondary_page_view.dart';
 import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
+
 import 'package:uni/view/Widgets/exam_page_title_filter.dart';
 import 'package:uni/view/Widgets/row_container.dart';
 import 'package:uni/view/Widgets/schedule_row.dart';
 import 'package:uni/view/Widgets/title_card.dart';
-
 import 'dart:io';
 import 'package:uni/model/entities/course.dart';
 import 'package:flutter/material.dart';
 import 'package:uni/view/Pages/unnamed_page_view.dart';
-
 //import '../../lib/controller/mock_get_info.dart';
 import '../../model/entities/course.dart';
+import 'package:uni/model/schedule_course_page_model.dart';
 
-import 'package:uni/view/Widgets/account_info_card.dart';
-import 'package:uni/view/Widgets/course_info_card.dart';
-import 'package:uni/view/Widgets/print_info_card.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import '../../model/entities/lecture.dart';
-import '../Widgets/schedule_slot.dart';
 
 class show_UCS_schedule extends StatefulWidget {
   //final List<Course> courses = get_courses();
   @override
   State<StatefulWidget> createState() =>
-      Show_UCS_scheculeViewState(/*courses: courses*/);
+      Show_UCS_scheculeViewState();
 }
 
-Widget Build_Course_card(Course course) {
+Widget Build_Course_card(Course course, BuildContext context) {
   String regentt = "";
   for (int i = 0; i < course.regent_teachers.length; i++) {
     regentt += course.regent_teachers[i].toString() + "\n";
@@ -82,7 +75,8 @@ Widget Build_Course_card(Course course) {
                             MaterialStateProperty.all<Color>(Colors.red)),
                     child: const Text('Horário'),
                     //Solução temporária
-                    onPressed: () async {
+                    onPressed:    () {Navigator.of(context).push(MaterialPageRoute(builder: (_) => ScheduleCoursePage()));}
+                    /*() async {
                       final url =
                           "https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=" +
                               course.id.toString();
@@ -92,7 +86,7 @@ Widget Build_Course_card(Course course) {
                             forceWebView: true,
                             enableJavaScript: true);
                       }
-                    }, //Use navigator to open new page with uc info
+                    }*/, //Use navigator to open new page with uc info
                   ))
             ],
           ),
@@ -111,7 +105,7 @@ class Show_UCS_scheculeViewState extends UnnamedPickUPPageView {
     List<Widget> c = <Widget>[];
     c.add(Text("Unidades Curriculares atuais:", style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
     for (var i = 0; i < courses.length; i++) {
-      c.add(Build_Course_card(courses[i]));
+      c.add(Build_Course_card(courses[i],context));
     }
     return ListView(children: <Widget>[Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))]);
   }

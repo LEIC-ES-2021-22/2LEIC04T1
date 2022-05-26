@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:uni/view/Pages/schedule_course_page_view.dart';
 import 'package:uni/view/Pages/secondary_page_view.dart';
+import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
+
 
 class ScheduleCoursePage extends StatefulWidget {
   const ScheduleCoursePage({Key key}) : super(key: key);
@@ -13,7 +15,7 @@ class ScheduleCoursePage extends StatefulWidget {
   _ScheduleCoursePageState createState() => _ScheduleCoursePageState();
 }
 
-class _ScheduleCoursePageState extends SecondaryPageViewState
+class _ScheduleCoursePageState extends UnnamedPickUPPageView
     with SingleTickerProviderStateMixin {
   final int weekDay = DateTime.now().weekday;
 

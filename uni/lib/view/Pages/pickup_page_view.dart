@@ -67,8 +67,7 @@ final List<AppAction> actions = [
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => ScheduleCoursePage()));
-          //.push(MaterialPageRoute(builder: (_) => show_UCS_schedule()));
+          .push(MaterialPageRoute(builder: (_) => show_UCS_schedule()));
     },
   ),
   AppAction(
