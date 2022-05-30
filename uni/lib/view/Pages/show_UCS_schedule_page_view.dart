@@ -3,21 +3,18 @@ import 'package:uni/controller/load_info.dart';
 import 'package:uni/controller/exam.dart';
 import 'package:uni/controller/mock_get_info.dart';
 import 'package:uni/model/app_state.dart';
+import 'package:uni/model/entities/course_unit.dart';
 import 'package:uni/model/entities/exam.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:uni/model/utils/day_of_week.dart';
-import 'package:uni/view/Pages/secondary_page_view.dart';
+import 'package:uni/utils/constants.dart';
 import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
-
 import 'package:uni/view/Widgets/exam_page_title_filter.dart';
 import 'package:uni/view/Widgets/row_container.dart';
 import 'package:uni/view/Widgets/schedule_row.dart';
+import 'package:uni/controller/schedule_fetcher/schedule_course_fetcher_api.dart';
 import 'package:uni/view/Widgets/title_card.dart';
 import 'dart:io';
 import 'package:uni/model/entities/course.dart';
-import 'package:flutter/material.dart';
-import 'package:uni/view/Pages/unnamed_page_view.dart';
 //import '../../lib/controller/mock_get_info.dart';
 import '../../model/entities/course.dart';
 import 'package:uni/model/schedule_course_page_model.dart';
@@ -30,11 +27,7 @@ class show_UCS_schedule extends StatefulWidget {
       Show_UCS_scheculeViewState();
 }
 
-Widget Build_Course_card(Course course, BuildContext context) {
-  String regentt = "";
-  for (int i = 0; i < course.regent_teachers.length; i++) {
-    regentt += course.regent_teachers[i].toString() + "\n";
-  }
+Widget Build_Course_card(CourseUnit course, BuildContext context) {
 
   return Container(
     width: 300,
@@ -60,10 +53,10 @@ Widget Build_Course_card(Course course, BuildContext context) {
                       color: Colors.black,
                       fontWeight: FontWeight.bold),
                   textAlign: TextAlign.center),
-              Text(course.currYear,
+              Text(course.curricularYear.toString(),
                   style: TextStyle(fontSize: 18.0, color: Colors.black45),
                   textAlign: TextAlign.left),
-              Text("\n" + regentt,
+              Text("\n" + course.ects.toString() + " ECTS\n",
                   style:
                       TextStyle(fontSize: 18.0, color: Colors.lightBlueAccent),
                   textAlign: TextAlign.left),
@@ -74,19 +67,9 @@ Widget Build_Course_card(Course course, BuildContext context) {
                         backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.red)),
                     child: const Text('Horário'),
-                    //Solução temporária
-                    onPressed:    () {Navigator.of(context).push(MaterialPageRoute(builder: (_) => ScheduleCoursePage()));}
-                    /*() async {
-                      final url =
-                          "https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=" +
-                              course.id.toString();
-                      if (await canLaunch(url)) {
-                        await launch(url,
-                            forceSafariVC: true,
-                            forceWebView: true,
-                            enableJavaScript: true);
-                      }
-                    }*/, //Use navigator to open new page with uc info
+                    onPressed:    (){
+                      Navigator.of(context).push(MaterialPageRoute(builder: (_) => ScheduleCoursePage()));
+                      }, //Use navigator to open new page with uc info
                   ))
             ],
           ),
@@ -98,7 +81,7 @@ Widget Build_Course_card(Course course, BuildContext context) {
 class Show_UCS_scheculeViewState extends UnnamedPickUPPageView {
   final double borderRadius = 10.0;
 
-  final List<Course> courses = get_courses();
+  final List<CourseUnit> courses = get_ucs();
 
   @override
   Widget getBody(BuildContext context) {

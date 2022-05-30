@@ -6,7 +6,7 @@ import 'package:uni/view/Pages/show_UCS_schedule_page_view.dart';
 import 'package:uni/model/schedule_course_page_model.dart';
 import 'package:uni/view/Pages/general_page_view.dart';
 import 'package:uni/view/Widgets/main_cards_list.dart';
-
+import 'package:uni/model/schedule_pickup_page_model.dart';
 class PickupPageView extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => PickupPageViewState();
@@ -94,7 +94,7 @@ final List<AppAction> actions = [
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => UrgentScreen()));
+          .push(MaterialPageRoute(builder: (_) => SchedulePickUPPage()));
     },
   ),
   AppAction(
@@ -102,8 +102,7 @@ final List<AppAction> actions = [
     label: 'Inscrição nas Unidades Curriculares',
     labelColor: Colors.black,
     callback: (context) {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => incricao_UCS()));
+      Navigator.of(context).push(MaterialPageRoute(builder: (_) => incricao_UCS()));
     },
   ),
 ];
@@ -158,53 +157,5 @@ class ActionButton extends StatelessWidget {
         child: Text(action.label,
             textAlign: TextAlign.center,
             style: TextStyle(color: action.labelColor, fontSize: 20)));
-  }
-}
-
-class ProductScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return AppLayout(
-      pageTitle: ('Products Page'),
-      child: Center(
-        child: Text('LIST OF PRODUCTS'),
-      ),
-    );
-  }
-}
-
-class MailScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return AppLayout(
-      pageTitle: 'Mail Page',
-      child: Center(
-        child: Text('LIST OF MAIL'),
-      ),
-    );
-  }
-}
-
-class UrgentScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return AppLayout(
-      pageTitle: 'Urgent Page',
-      child: Center(
-        child: Text('URGENT', style: TextStyle(color: Colors.redAccent)),
-      ),
-    );
-  }
-}
-
-class NewsScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return AppLayout(
-      pageTitle: 'News Page',
-      child: Center(
-        child: Text('NEWS', style: TextStyle(color: Colors.green)),
-      ),
-    );
   }
 }

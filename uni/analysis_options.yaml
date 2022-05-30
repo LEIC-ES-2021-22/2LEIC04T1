@@ -27,6 +27,8 @@ linter:
     - unnecessary_new
 
 analyzer:
+#  enable-experiment:
+#    - non-nullable
   errors:
     # allow for asset_does_not_exist
     unrecognized_error_code: ignore

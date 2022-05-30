@@ -6,7 +6,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:uni/view/Pages/schedule_course_page_view.dart';
 import 'package:uni/view/Pages/secondary_page_view.dart';
 import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
-
+import 'package:uni/view/Pages/general_page_view.dart';
 
 class ScheduleCoursePage extends StatefulWidget {
   const ScheduleCoursePage({Key key}) : super(key: key);
@@ -16,7 +16,7 @@ class ScheduleCoursePage extends StatefulWidget {
 }
 
 class _ScheduleCoursePageState extends UnnamedPickUPPageView
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin{
   final int weekDay = DateTime.now().weekday;
 
   TabController tabController;
@@ -59,6 +59,7 @@ class _ScheduleCoursePageState extends UnnamedPickUPPageView
 
   @override
   Widget getBody(BuildContext context) {
+
     return StoreConnector<AppState, Tuple2<List<Lecture>, RequestStatus>>(
       converter: (store) => Tuple2(store.state.content['courseschedule'],
           store.state.content['coursescheduleStatus']),
@@ -66,12 +67,14 @@ class _ScheduleCoursePageState extends UnnamedPickUPPageView
         final lectures = lectureData.item1;
         final scheduleStatus = lectureData.item2;
         return ScheduleCoursePageView(
-            tabController: tabController,
-            scrollViewController: scrollViewController,
-            daysOfTheWeek: daysOfTheWeek,
-            aggLectures: _groupLecturesByDay(lectures),
-            scheduleStatus: scheduleStatus);
+                tabController: tabController,
+                scrollViewController: scrollViewController,
+                daysOfTheWeek: daysOfTheWeek,
+                aggLectures: _groupLecturesByDay(lectures),
+                scheduleStatus: scheduleStatus);
       },
     );
   }
+
+
 }

@@ -1,36 +1,16 @@
 import 'package:uni/model/app_state.dart';
 import 'package:uni/model/entities/lecture.dart';
 import 'package:flutter/material.dart';
+import 'package:uni/model/schedule_course_page_model.dart';
 import 'package:uni/view/Widgets/page_title.dart';
 
 import 'package:flutter/cupertino.dart';
-import 'package:uni/controller/load_info.dart';
-import 'package:uni/controller/exam.dart';
-import 'package:uni/controller/mock_get_info.dart';
-import 'package:uni/model/app_state.dart';
-import 'package:uni/model/entities/exam.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:uni/model/utils/day_of_week.dart';
-import 'package:uni/view/Pages/secondary_page_view.dart';
-import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
-import 'package:uni/view/Widgets/exam_page_title_filter.dart';
 import 'package:uni/view/Widgets/row_container.dart';
-import 'package:uni/view/Widgets/schedule_row.dart';
-import 'package:uni/view/Widgets/title_card.dart';
-import 'dart:io';
-import 'package:uni/model/entities/course.dart';
-import 'package:flutter/material.dart';
-import 'package:uni/view/Pages/unnamed_page_view.dart';
-//import '../../lib/controller/mock_get_info.dart';
-import '../../model/entities/course.dart';
-import 'package:uni/model/schedule_course_page_model.dart';
 
 import 'package:uni/view/Widgets/request_dependent_widget_builder.dart';
-import 'package:uni/view/Widgets/schedule_slot.dart';
 
 /// Manages the 'schedule' sections of the app
-class ScheduleCoursePageView extends StatelessWidget {
+class ScheduleCoursePageView extends StatefulWidget {
 
   ScheduleCoursePageView(
       {Key key,
@@ -47,27 +27,112 @@ class ScheduleCoursePageView extends StatelessWidget {
   final ScrollController scrollViewController;
 
   @override
+  ScheduleCoursePageViewState createState() =>
+      ScheduleCoursePageViewState(tabController: tabController,
+      daysOfTheWeek: daysOfTheWeek,
+      aggLectures: aggLectures,
+      scheduleStatus: scheduleStatus,scrollViewController: scrollViewController);
+
+}
+
+class ScheduleCoursePageViewState extends State<ScheduleCoursePageView>{
+
+  ScheduleCoursePageViewState(
+      {Key key,
+        @required this.tabController,
+        @required this.daysOfTheWeek,
+        @required this.aggLectures,
+        @required this.scheduleStatus,
+        this.scrollViewController});
+
+  final List<String> daysOfTheWeek;
+  List<List<Lecture>> aggLectures;
+  final RequestStatus scheduleStatus;
+  final TabController tabController;
+  final ScrollController scrollViewController;
+
+  String Value_dropdown = "Todos";
+  List<List<Lecture>> filtered_Lectures = List.empty(growable: true);
+  List<String> filters = List.empty(growable: true);
+
+@override
   Widget build(BuildContext context) {
     final MediaQueryData queryData = MediaQuery.of(context);
 
+    filters.add("Todos");
+
+    for (int i = 0; i < daysOfTheWeek.length; i++) {
+      List<Lecture> lectures_day = aggLectures[i];
+      filtered_Lectures.add(List.empty(growable: true));
+      for (Lecture lecture in lectures_day) {
+        bool already_in = false;
+        for (String a in filters) {
+          if (a == lecture.classNumber) already_in = true;
+        }
+        if (!already_in) {
+          filters.add(lecture.classNumber);
+        }
+        if(lecture.classNumber == Value_dropdown){
+          filtered_Lectures[i].add(lecture);
+        }
+
+      }
+    }
+    List<List<Lecture>> saved_lectures = aggLectures;
+    if(Value_dropdown != "Todos"){
+      aggLectures = filtered_Lectures;
+    }
+
     return Column(children: <Widget>[
+      Row(children: <Widget>[
+        PageTitle(name: 'Horário'),
+        Spacer(),
+        DropdownButton<String>(
+          value: Value_dropdown,
+          icon: const Icon(Icons.arrow_drop_down),
+          elevation: 16,
+          style: const TextStyle(color: Colors.black),
+          dropdownColor: Colors.white,
+          underline: Container(
+            height: 2,
+            color: Colors.red,
+          ),
+          onChanged: (String newValue) {
+            setState(() {
+              aggLectures = saved_lectures;
+              filtered_Lectures = List.empty(growable: true);
+              filters = List.empty(growable: true);
+              Value_dropdown = newValue;
+            });
+          },
+          items: filters.map<DropdownMenuItem<String>>((String value) {
+            return DropdownMenuItem<String>(
+              value: value,
+              child: Text(
+                value,
+                style: TextStyle(color: Colors.black),
+              ),
+            );
+          }).toList(),
+        )]),
       ListView(
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
         children: <Widget>[
-          PageTitle(name: 'Horário'),
           TabBar(
             controller: tabController,
             isScrollable: true,
             tabs: createTabs(queryData, context),
+            indicatorColor: Colors.black,
+            //labelColor: Colors.black,
           ),
         ],
       ),
       Expanded(
           child: TabBarView(
-            controller: tabController,
-            children: createSchedule(context),
-          ))
+        controller: tabController,
+        children: createSchedule(context),
+      ))
     ]);
   }
 
@@ -76,7 +141,7 @@ class ScheduleCoursePageView extends StatelessWidget {
     final List<Widget> tabs = <Widget>[];
     for (var i = 0; i < daysOfTheWeek.length; i++) {
       tabs.add(Container(
-        color: Theme.of(context).backgroundColor,
+        color: Colors.red,
         width: queryData.size.width * 1 / 3,
         child: Tab(key: Key('schedule-page-tab-$i'), text: daysOfTheWeek[i]),
       ));
@@ -97,17 +162,39 @@ class ScheduleCoursePageView extends StatelessWidget {
     final List<Widget> scheduleContent = <Widget>[];
     for (int i = 0; i < lectures.length; i++) {
       final Lecture lecture = lectures[i];
-      scheduleContent.add(ScheduleSlot(
-        subject: lecture.subject,
-        typeClass: lecture.typeClass,
-        rooms: lecture.room,
-        begin: lecture.startTime,
-        end: lecture.endTime,
-        teacher: lecture.teacher,
-        classNumber: lecture.classNumber,
-      ));
+      scheduleContent.add(create_schedule_slot(
+          lecture.subject,
+          lecture.typeClass,
+          lecture.room,
+          lecture.startTime,
+          lecture.endTime,
+          lecture.teacher,
+          lecture.classNumber));
     }
     return scheduleContent;
+  }
+
+  Widget create_schedule_slot(String subject, String typeClass, String room,
+      String startTime, String endTime, String teacher, String classNumber) {
+    return RowContainer(
+        child: Container(
+            padding: EdgeInsets.only(
+                top: 10.0, bottom: 10.0, left: 22.0, right: 22.0),
+            child: Row(children: [
+              Text(
+                classNumber + ":",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Spacer(),
+              Column(children: [Text(startTime + "\n" + endTime)]),
+              Spacer(),
+              Column(children: [
+                Text(subject + " " + "(" + typeClass + ")"),
+                Text(teacher)
+              ]),
+              Spacer(),
+              Column(children: [Text(room)])
+            ])));
   }
 
   Widget Function(dynamic daycontent, BuildContext context) dayColumnBuilder(
@@ -132,12 +219,12 @@ class ScheduleCoursePageView extends StatelessWidget {
       content: aggLectures[day],
       contentChecker: aggLectures[day].isNotEmpty,
       onNullContent:
-      Center(child: Text('Não possui aulas à ' + daysOfTheWeek[day] + '.')),
+          Center(child: Text('Não possui aulas à ' + daysOfTheWeek[day] + '.')),
       index: day,
     );
   }
-}
 
+}
 
 /*
 class ScheduleCourseViewState extends UnnamedPickUPPageView {
