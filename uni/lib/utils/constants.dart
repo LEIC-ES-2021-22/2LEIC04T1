@@ -12,5 +12,3 @@ const navLogOut = 'Terminar sessão';
 const faculties = ['faup', 'fbaup', 'fcup', 'fcnaup', 'fadeup',
                   'fdup', 'fep', 'feup', 'ffup', 'flup', 'fmup',
                   'fmdup', 'fpceup', 'icbas'];
-
-//String Curso_horario_atual;

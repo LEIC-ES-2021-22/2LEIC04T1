@@ -141,9 +141,10 @@ class ScheduleCoursePageViewState extends State<ScheduleCoursePageView>{
     final List<Widget> tabs = <Widget>[];
     for (var i = 0; i < daysOfTheWeek.length; i++) {
       tabs.add(Container(
-        color: Colors.red,
+        color: Colors.redAccent,
         width: queryData.size.width * 1 / 3,
-        child: Tab(key: Key('schedule-page-tab-$i'), text: daysOfTheWeek[i]),
+        margin: EdgeInsets.symmetric(horizontal: 12.0),
+        child: Tab(key: Key('schedule-page-tab-$i'), child: Text(daysOfTheWeek[i], style: TextStyle(color: Colors.black))),
       ));
     }
     return tabs;

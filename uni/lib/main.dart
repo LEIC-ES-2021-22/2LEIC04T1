@@ -82,6 +82,9 @@ class MyAppState extends State<MyApp> {
           home: SplashScreen(),
           navigatorKey: NavigationService.navigatorKey,
           // ignore: missing_return
+/*          routes: {
+            "/pickup_home" : (context) => PickupPageView(),
+          },*/
           onGenerateRoute: (RouteSettings settings) {
             switch (settings.name) {
               case '/' + Constants.navPersonalArea:

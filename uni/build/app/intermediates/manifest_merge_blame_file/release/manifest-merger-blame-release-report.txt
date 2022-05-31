@@ -1,0 +1,171 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="pt.up.fe.ni.uni"
+4    android:versionCode="35"
+5    android:versionName="1.1.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml
+10    <!--
+11         io.flutter.app.FlutterApplication is an android.app.Application that
+12         calls FlutterMain.startInitialization(this); in its onCreate method.
+13         In most cases you can leave this as-is, but you if you want to provide
+14         additional functionality it is fine to subclass or reimplement
+15         FlutterApplication and put your custom class here.
+16    -->
+17
+18    <queries>
+18-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:9:5-30:15
+19
+20        <!-- If your app opens https URLs -->
+21        <intent>
+21-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:11:9-14:18
+22            <action android:name="android.intent.action.VIEW" />
+22-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:12:13-65
+22-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:12:21-62
+23
+24            <data android:scheme="https" />
+24-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:13:13-44
+24-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:13:19-41
+25        </intent>
+26        <!-- If your app makes calls -->
+27        <intent>
+27-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:16:9-19:18
+28            <action android:name="android.intent.action.DIAL" />
+28-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:17:13-65
+28-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:17:21-62
+29
+30            <data android:scheme="tel" />
+30-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:13:13-44
+30-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:13:19-41
+31        </intent>
+32        <!-- If your sends SMS messages -->
+33        <intent>
+33-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:21:9-24:18
+34            <action android:name="android.intent.action.SENDTO" />
+34-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:22:13-67
+34-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:22:21-64
+35
+36            <data android:scheme="smsto" />
+36-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:13:13-44
+36-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:13:19-41
+37        </intent>
+38        <!-- If your app sends emails -->
+39        <intent>
+39-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:26:9-29:18
+40            <action android:name="android.intent.action.SEND" />
+40-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:27:13-65
+40-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:27:21-62
+41
+42            <data android:mimeType="*/*" />
+42-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:13:13-44
+42-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:28:19-41
+43        </intent>
+44    </queries>
+45
+46    <uses-permission android:name="android.permission.INTERNET" />
+46-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:57:5-66
+46-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:57:22-64
+47    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+47-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:58:5-72
+47-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:58:22-70
+48    <uses-permission android:name="android.permission.READ_CALENDAR" />
+48-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:59:5-71
+48-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:59:22-69
+49    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+49-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-79
+49-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-76
+50    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+50-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\release\AndroidManifest.xml:8:5-76
+50-->[:connectivity] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\connectivity\intermediates\merged_manifest\release\AndroidManifest.xml:8:22-73
+51
+52    <application
+53        android:name="android.app.Application"
+53-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:33:9-42
+54        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+54-->[androidx.core:core:1.6.0] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\616b51fd43b7e50cf53c169aeb75cc32\core-1.6.0\AndroidManifest.xml:24:18-86
+55        android:icon="@mipmap/ic_launcher"
+55-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:35:9-43
+56        android:label="uni" >
+56-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:34:9-28
+57        <activity
+57-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:36:9-50:20
+58            android:name="pt.up.fe.ni.uni.MainActivity"
+58-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:37:13-41
+59            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+59-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:40:13-163
+60            android:hardwareAccelerated="true"
+60-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:41:13-47
+61            android:launchMode="singleTop"
+61-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:38:13-43
+62            android:theme="@style/LaunchTheme"
+62-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:39:13-47
+63            android:windowSoftInputMode="adjustResize" >
+63-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:42:13-55
+64            <intent-filter>
+64-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:43:13-46:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:44:17-68
+65-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:44:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:45:17-76
+67-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:45:27-74
+68            </intent-filter>
+69
+70            <meta-data
+70-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:47:13-49:66
+71                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+71-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:48:17-81
+72                android:resource="@drawable/launch_background" />
+72-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:49:17-63
+73        </activity>
+74        <!--
+75             Don't delete the meta-data below.
+76             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+77        -->
+78        <meta-data
+78-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:53:9-55:33
+79            android:name="flutterEmbedding"
+79-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:54:13-44
+80            android:value="2" />
+80-->C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\android\app\src\main\AndroidManifest.xml:55:13-30
+81
+82        <activity
+82-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-11:74
+83            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+83-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-74
+84            android:exported="false"
+84-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-37
+85            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+85-->[:url_launcher_android] C:\University\2 ano\2 Semestre\ES\Projeto  ES\2LEIC04T1\uni\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-71
+86
+87        <uses-library
+87-->[androidx.window:window:1.0.0-beta04] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\83cb8bbc532cffa14556003fd4bbf50b\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+88            android:name="androidx.window.extensions"
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\83cb8bbc532cffa14556003fd4bbf50b\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+89            android:required="false" />
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\83cb8bbc532cffa14556003fd4bbf50b\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+90        <uses-library
+90-->[androidx.window:window:1.0.0-beta04] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\83cb8bbc532cffa14556003fd4bbf50b\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+91            android:name="androidx.window.sidecar"
+91-->[androidx.window:window:1.0.0-beta04] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\83cb8bbc532cffa14556003fd4bbf50b\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+92            android:required="false" />
+92-->[androidx.window:window:1.0.0-beta04] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\83cb8bbc532cffa14556003fd4bbf50b\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+93
+94        <provider
+94-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\fc1bac4f07ec655a6ddc80cf36765802\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+95            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+95-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\fc1bac4f07ec655a6ddc80cf36765802\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+96            android:authorities="pt.up.fe.ni.uni.lifecycle-process"
+96-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\fc1bac4f07ec655a6ddc80cf36765802\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+97            android:exported="false"
+97-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\fc1bac4f07ec655a6ddc80cf36765802\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+98            android:multiprocess="true" />
+98-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Utilizador\.gradle\caches\transforms-2\files-2.1\fc1bac4f07ec655a6ddc80cf36765802\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+99    </application>
+100
+101</manifest>

@@ -40,7 +40,6 @@ class incricao_UCS extends StatefulWidget {
 class incricao_UCSViewState extends UnnamedPickUPPageView {
   final double borderRadius = 10.0;
 
-  final List<Course> courses = get_courses();
 
   @override
   Widget getBody(BuildContext context) {

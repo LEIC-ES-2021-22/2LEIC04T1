@@ -1,71 +1,141 @@
 import 'package:flutter/cupertino.dart';
-import 'package:uni/controller/load_info.dart';
-import 'package:uni/controller/exam.dart';
 import 'package:uni/controller/mock_get_info.dart';
-import 'package:uni/model/app_state.dart';
-import 'package:uni/model/entities/exam.dart';
+import 'package:uni/model/entities/course_unit.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:uni/model/utils/day_of_week.dart';
-import 'package:uni/view/Pages/secondary_page_view.dart';
 import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
-import 'package:uni/view/Widgets/exam_page_title_filter.dart';
-import 'package:uni/view/Widgets/row_container.dart';
-import 'package:uni/view/Widgets/schedule_row.dart';
-import 'package:uni/view/Widgets/title_card.dart';
-
-import 'dart:io';
-import 'package:uni/model/entities/course.dart';
-import 'package:flutter/material.dart';
-import 'package:uni/view/Pages/unnamed_page_view.dart';
-
-//import '../../lib/controller/mock_get_info.dart';
-import '../../model/entities/course.dart';
-
-import 'package:uni/view/Widgets/account_info_card.dart';
-import 'package:uni/view/Widgets/course_info_card.dart';
-import 'package:uni/view/Widgets/print_info_card.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import '../../model/entities/lecture.dart';
-import '../Widgets/schedule_slot.dart';
 
 class incricao_turmas_UCS extends StatefulWidget {
-  //final List<Course> courses = get_courses();
   @override
   State<StatefulWidget> createState() => incricao_turmas_UCSViewState();
 }
+
+class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
+  incricao_turma_cadeira({@required CourseUnit this.uc});
+
+  CourseUnit uc;
+
+  Widget Build_Course_card_button(BuildContext context) {
+
+    String turma = get_turma_uc(uc);
+    List<String> turmas = get_turmas_uc(uc);
+
+    return Align(
+        alignment: Alignment.bottomCenter,
+        child: ElevatedButton(
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
+            child: const Text('Escolher Turma'),
+            onPressed: () {
+              return showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return StatefulBuilder(
+                      builder: (context, setState) {
+                        return AlertDialog(
+                          title: Text('Turmas:'),
+                          content: Container(
+                            width: double.minPositive,
+                            height: 300,
+                            child: ListView.builder(
+                              shrinkWrap: true,
+                              itemCount: turmas.length,
+                              itemBuilder: (BuildContext context, int index) {
+                                String _key = turmas.elementAt(index);
+                                return ListTile(
+                                    title: Text(_key),
+                                    leading: Radio<String>(
+                                        groupValue: turma,
+                                        value: _key,
+                                        onChanged: (val) {
+                                          setState(() {
+                                            turma = val;
+                                          });
+                                        }));
+                              },
+                            ),
+                          ),
+                          actions: <Widget>[
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context, null);
+                              },
+                              child: Text('Cancelar'),
+                            ),
+                            TextButton(
+                              onPressed: () {
+                                set_turma_uc(uc, turma);
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (_) => incricao_turmas_UCS()));
+                              },
+                              child: Text('OK'),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  });
+            } //Use navigator to open new page with uc info
+            ));
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 300,
+      height: 270,
+      padding: new EdgeInsets.all(10.0),
+      child: Card(
+          //possible improvement: dinamically change cards height acording to its contents
+          margin: EdgeInsets.zero,
+          shape: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15.0),
+            borderSide: BorderSide.none,
+          ),
+          color: Colors.grey,
+          elevation: 10,
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                //leading: Icon(Icons.album, size: 60),
+                Text(uc.name,
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center),
+                Text(uc.curricularYear.toString(),
+                    style: TextStyle(fontSize: 18.0, color: Colors.black45),
+                    textAlign: TextAlign.left),
+                Build_Course_card_button(context),
+                Text("\n" + "Turma : " + get_turma_uc(uc) + "\n",
+                    style: TextStyle(fontSize: 18.0, color: Colors.deepPurple),
+                    textAlign: TextAlign.left),
+                //Build_Course_card_button(uc, context)
+              ],
+            ),
+          )),
+    );
+  }
+}
+
 /// Tracks the state of `Enrollment`.
 class incricao_turmas_UCSViewState extends UnnamedPickUPPageView {
-  final double borderRadius = 10.0;
-
-  final List<Course> courses = get_courses();
+  List<CourseUnit> ucs = get_ucs();
 
   @override
   Widget getBody(BuildContext context) {
     List<Widget> c = <Widget>[];
-    c.add(Text("Unidades Curriculares atuais:", style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
-    return ListView(children: <Widget>[Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))]);
+    c.add(Text("Unidades Curriculares atuais:",
+        style: TextStyle(
+            color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
+    for (CourseUnit uc in ucs) {
+      c.add(new incricao_turma_cadeira(uc: uc).build(context));
+    }
+    return ListView(children: <Widget>[
+      Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))
+    ]);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

@@ -5,6 +5,7 @@ import 'package:uni/view/Pages/incricao_turmas_UCS_page_view.dart';
 import 'package:uni/view/Pages/show_UCS_schedule_page_view.dart';
 import 'package:uni/model/schedule_course_page_model.dart';
 import 'package:uni/view/Pages/general_page_view.dart';
+import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
 import 'package:uni/view/Widgets/main_cards_list.dart';
 import 'package:uni/model/schedule_pickup_page_model.dart';
 class PickupPageView extends StatefulWidget {
@@ -13,15 +14,10 @@ class PickupPageView extends StatefulWidget {
 }
 
 /// Tracks the state of pickup home page.
-class PickupPageViewState extends GeneralPageViewState {
+class PickupPageViewState extends UnnamedPickUPPageView {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        color: Colors.red, //background color
-        title: "PickUP",
-        home: Scaffold(
-        appBar: buildPickUPAppBar(context),
-          body: Column(children: <Widget>[
+  Widget getBody(BuildContext context) {
+    return Column(children: <Widget>[
             SizedBox(
               height: 30, // <-- SEE HERE
             ),
@@ -55,8 +51,7 @@ class PickupPageViewState extends GeneralPageViewState {
                     .toList(),
               ),
             )
-          ]),
-        ));
+          ]);
   }
 }
 
@@ -135,7 +130,6 @@ class AppLayout extends StatelessWidget {
     );
   }
 }
-
 class ActionButton extends StatelessWidget {
   final AppAction action;
 
