@@ -25,6 +25,7 @@ O processo de inscrição nas unidades curriculares e nas turmas no Sigarra embo
 
 ## Required API's
 - Acesso á posição no plano do estudante 
+- Acesso às informações sobre as cadeira e as suas turmas
 - Vagas disponíveis na cadeira  
 - Horários de cada turma 
 - Acesso as vagas na turma
