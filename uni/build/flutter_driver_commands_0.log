@@ -1,0 +1,716 @@
+2022-06-01 16:06:26.496564 >>> {command: get_health}
+2022-06-01 16:06:28.353156 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:06:28.375155 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:06:31.959937 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:06:31.966937 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:06:32.191941 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:06:32.196937 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:06:33.327504 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:15:27.237665 >>> {command: get_health}
+2022-06-01 16:15:28.431291 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:15:28.453287 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:15:30.880576 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:15:30.885573 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:15:31.205573 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:15:31.209577 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:15:32.344588 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:15:32.353589 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:16:41.519620 >>> {command: get_health}
+2022-06-01 16:16:42.779622 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:16:42.810621 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:16:44.893159 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:16:44.898159 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:16:45.132160 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:16:45.137160 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:16:45.818172 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:16:45.824195 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:18:52.340994 >>> {command: get_health}
+2022-06-01 16:18:54.573738 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:18:54.596944 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:18:57.523495 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:18:57.530492 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:18:57.841491 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:18:57.849503 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:18:59.025630 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:18:59.032633 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:20:12.446904 >>> {command: get_health}
+2022-06-01 16:20:14.296404 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:14.319404 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:20:16.338388 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:16.343375 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:20:17.210224 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:17.216222 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:20:17.678222 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:17.697224 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:20:18.941676 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:18.946679 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:20:19.388599 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:19.393598 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:20:20.280425 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:20.286437 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:20:20.342357 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:20.347359 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:20:20.437473 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:20:20.441474 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:20:21.708495 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:40.528608 >>> {command: get_health}
+2022-06-01 16:32:41.736889 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:41.757888 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:32:44.431783 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:44.437787 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:32:44.751784 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:44.755784 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:32:45.369395 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:45.386386 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:32:47.000386 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:47.006386 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:32:50.539939 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:50.545940 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:32:50.917607 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:50.923608 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:32:50.947609 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:50.952610 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:32:51.127388 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:51.132387 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:32:51.842292 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:51.848292 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:32:51.903293 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:51.910295 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:32:52.003294 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:32:52.008297 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:32:52.361294 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:49.061173 >>> {command: get_health}
+2022-06-01 16:33:50.724169 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:50.746172 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:33:53.893613 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:53.899588 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:33:54.405592 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:54.415124 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:33:55.195177 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:55.212176 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:33:57.029316 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:57.037321 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:33:57.503424 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:57.511421 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:33:58.156119 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:58.162125 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:33:58.469120 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:58.474122 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:33:58.592994 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:58.598516 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:33:59.124212 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:59.130215 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:33:59.161213 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:59.173210 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:33:59.205224 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:33:59.210222 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:34:00.847207 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:34:55.935788 >>> {command: get_health}
+2022-06-01 16:34:58.057767 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:34:58.079768 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:35:00.772780 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:00.777777 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:35:01.563300 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:01.568301 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:35:02.013818 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:02.030818 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:35:03.385646 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:03.390645 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:35:03.718646 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:03.726239 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:35:04.456306 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:04.464304 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:35:04.726307 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:04.732306 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:35:05.028305 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:05.033305 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:35:05.773431 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:05.779431 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:35:05.974432 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:05.984432 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:35:06.341431 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:06.347959 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:35:07.046715 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:54.178814 >>> {command: get_health}
+2022-06-01 16:35:55.721019 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:55.749650 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:35:58.696010 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:58.702009 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:35:58.902693 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:58.909692 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:35:59.962481 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:35:59.985004 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:36:01.409637 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:01.419636 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:36:01.574590 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:01.579592 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:36:02.647727 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:02.654712 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:36:03.030172 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:03.041169 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:36:03.316827 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:03.377825 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:36:03.938336 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:03.944331 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:36:04.037729 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:04.043730 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:36:04.217739 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:36:04.222742 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:36:05.805989 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:36.609762 >>> {command: get_health}
+2022-06-01 16:39:38.292361 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:38.320363 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:39:40.390751 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:40.398751 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:39:40.705616 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:40.712617 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:39:41.514620 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:41.530618 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:39:42.918810 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:42.924810 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:39:42.986811 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:42.992815 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:39:43.939454 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:43.945453 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:39:44.017455 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:44.022456 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:39:44.232461 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:44.237456 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:39:45.035453 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:45.041457 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:39:45.108455 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:45.113455 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:39:45.176452 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:39:45.181454 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:39:45.631653 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:43.461934 >>> {command: get_health}
+2022-06-01 16:40:45.540861 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:45.562859 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:40:47.779077 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:47.786075 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:40:48.021866 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:48.026863 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:40:48.701735 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:48.718735 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:40:50.216453 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:50.223463 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:40:50.582676 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:50.589678 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:40:50.947679 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:50.952679 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:40:50.980699 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:50.986680 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:40:51.346676 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:51.352680 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:40:52.416007 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:52.421530 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:40:52.451974 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:52.457973 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:40:52.556874 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:52.562871 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:40:53.096696 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:40:53.102698 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:41:37.989499 >>> {command: get_health}
+2022-06-01 16:41:39.413519 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:39.442518 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:41:41.892643 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:41.898643 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:41:42.378641 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:42.386644 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:41:43.208238 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:43.227241 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:41:44.856408 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:44.864406 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:41:45.081410 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:45.088405 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:41:45.614873 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:45.620875 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:41:45.774412 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:45.779411 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:41:45.967424 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:45.975423 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:41:46.831361 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:46.838361 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:41:46.859359 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:46.864363 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:41:46.913362 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:46.918361 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:41:48.012947 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:41:48.020567 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:44:15.265299 >>> {command: get_health}
+2022-06-01 16:44:17.039637 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:17.061638 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:44:19.522800 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:19.528797 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:44:19.755795 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:19.761795 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:44:20.607334 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:20.626336 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:44:21.772442 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:21.780066 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:44:21.851070 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:21.857073 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:44:22.483952 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:22.490953 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:44:22.531369 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:22.538371 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:44:22.720984 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:22.726982 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:44:24.212606 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:24.223607 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:44:24.349606 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:24.354608 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:44:24.406604 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:24.411607 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:44:25.594603 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:44:25.600607 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:45:36.144099 >>> {command: get_health}
+2022-06-01 16:45:37.779298 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:37.801298 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:45:41.048251 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:41.054250 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:45:41.775254 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:41.781252 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:45:42.211252 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:42.228253 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:45:43.683251 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:43.690251 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:45:44.029252 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:44.035264 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:45:44.975250 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:44.982253 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:45:45.017252 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:45.022249 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:45:45.356251 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:45.361252 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:45:45.922881 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:45.929463 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:45:45.959593 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:45.964594 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:45:46.005152 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:46.011156 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:45:47.122048 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:45:47.127048 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:48:22.400327 >>> {command: get_health}
+2022-06-01 16:48:23.718798 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:23.740795 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:48:26.357926 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:26.362926 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:48:26.615002 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:26.622006 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:48:27.335144 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:27.352145 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:48:28.718663 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:28.724661 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:48:28.809667 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:28.814663 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:48:29.776661 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:29.783664 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:48:29.937662 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:29.941661 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:48:30.023662 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:30.029661 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:48:31.112055 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:31.118037 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:48:31.245037 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:31.251066 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:48:31.392035 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:31.397037 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:48:31.911040 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:48:31.915036 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:49:26.815531 >>> {command: get_health}
+2022-06-01 16:49:28.520680 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:28.549849 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:49:30.559938 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:30.567936 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:49:31.022487 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:31.028486 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:49:31.797487 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:31.815485 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:49:33.368522 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:33.377522 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:49:33.608558 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:33.614561 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:49:35.095744 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:35.104745 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:49:35.493575 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:35.498496 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:49:35.925752 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:35.932751 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:49:36.936645 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:36.942646 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:49:36.975646 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:36.980646 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:49:37.022645 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:37.028648 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:49:38.260546 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:49:43.276515 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:50:40.161008 >>> {command: get_health}
+2022-06-01 16:50:41.359006 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:50:41.383007 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:50:43.890362 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:50:43.896361 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:50:44.151359 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:50:44.158361 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:50:45.484632 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:50:45.502631 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:51:27.357710 >>> {command: get_health}
+2022-06-01 16:51:29.291239 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:29.312239 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 16:51:31.656340 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:31.662340 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 16:51:31.864339 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:31.869338 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:51:32.845339 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:32.861343 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 16:51:34.009602 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:34.015603 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 16:51:34.398247 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:34.404249 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:51:35.263670 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:35.271457 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:51:35.308456 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:35.313456 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 16:51:35.434477 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:35.439459 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:51:36.541083 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:36.547086 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 16:51:36.575122 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:36.582120 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 16:51:36.636127 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:36.641126 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 16:51:37.089427 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 16:51:37.096428 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:10:32.707598 >>> {command: get_health}
+2022-06-01 17:10:35.165518 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:35.194519 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:10:38.382540 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:38.390537 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:10:38.820348 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:38.826349 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:10:41.069241 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:41.103242 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:10:42.607243 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:42.615243 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:10:42.852244 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:42.857242 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:10:43.677514 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:43.686517 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:10:43.954509 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:43.964510 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:10:44.032510 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:44.038512 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:10:44.565507 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:44.572510 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:10:44.763508 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:44.768510 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:10:44.803508 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:44.809512 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:10:45.999025 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:10:46.006022 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:14:24.249534 >>> {command: get_health}
+2022-06-01 17:14:25.872531 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:25.900531 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:14:29.425801 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:29.432785 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:14:29.748978 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:29.756978 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:14:30.698074 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:30.717294 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:14:32.102730 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:32.108727 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:14:32.170732 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:32.178734 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:14:32.581726 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:32.588729 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:14:32.646727 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:32.652728 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:14:33.201765 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:33.207766 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:14:34.094920 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:34.100919 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:14:34.445920 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:34.452919 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:14:34.837921 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:34.843922 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:14:35.957922 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:14:35.965921 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:17:21.837052 >>> {command: get_health}
+2022-06-01 17:17:23.833935 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:23.865936 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:17:26.075932 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:26.082939 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:17:26.542936 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:26.548936 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:17:27.456453 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:27.473454 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:17:28.662285 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:28.670285 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:17:28.856282 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:28.861283 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:17:29.640117 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:29.648114 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:17:29.833114 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:29.838115 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:17:29.954263 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:29.959265 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:17:31.443558 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:31.450547 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:17:31.585228 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:31.591204 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:17:31.655280 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:31.663791 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:17:32.532380 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:17:32.537379 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:18:50.127094 >>> {command: get_health}
+2022-06-01 17:18:51.842041 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:51.868042 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:18:55.090950 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:55.097950 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:18:55.608950 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:55.616953 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:18:56.774950 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:56.794952 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:18:58.345867 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:58.352868 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:18:58.657950 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:58.663946 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:18:59.497825 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:59.503826 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:18:59.802828 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:18:59.809826 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:19:00.107823 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:19:00.113827 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:19:00.928763 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:19:00.935767 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:19:01.171765 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:19:01.176766 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:19:01.249764 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:19:01.256765 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:19:02.472261 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:19:02.480265 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:20:14.581157 >>> {command: get_health}
+2022-06-01 17:20:16.709702 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:16.733700 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:20:19.827772 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:19.833772 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:20:20.123771 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:20.130775 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:20:21.274770 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:21.295770 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:20:22.848770 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:22.856771 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:20:23.390489 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:23.396488 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:20:24.568432 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:24.574434 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:20:24.629436 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:24.635435 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:20:24.756443 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:24.764437 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:20:25.848645 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:25.855643 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:20:26.042645 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:26.048646 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:20:26.434648 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:26.440644 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:20:28.195561 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:20:28.203559 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:20:28.259563 <<< {isError: true, response: Uncaught extension error while executing scrollIntoView: Bad state: Too many elements
+#0      Iterable.single (dart:core/iterable.dart:656:24)
+#1      CommandHandlerFactory._scrollIntoView (package:flutter_driver/src/common/handler_factory.dart:388:54)
+<asynchronous suspension>
+#2      FlutterDriverExtension.call (package:flutter_driver/src/extension/extension.dart:373:31)
+<asynchronous suspension>
+#3      BindingBase.registerServiceExtension.<anonymous closure> (package:flutter/src/foundation/binding.dart:602:18)
+<asynchronous suspension>
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:33.290265 >>> {command: get_health}
+2022-06-01 17:22:36.054752 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:36.081749 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:22:38.790261 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:38.796264 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:22:39.128267 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:39.136261 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:22:41.003968 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:41.038964 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:22:42.434011 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:42.440012 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:22:42.568012 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:42.575015 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:22:43.528124 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:43.536123 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:22:43.582124 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:43.589125 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:22:44.030126 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:44.039123 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:22:44.752043 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:44.759041 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:22:44.925060 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:44.931061 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:22:45.389585 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:45.395583 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:22:46.302881 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:22:46.310880 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:22:46.396878 <<< {isError: true, response: Uncaught extension error while executing scrollIntoView: Bad state: Too many elements
+#0      Iterable.single (dart:core/iterable.dart:656:24)
+#1      CommandHandlerFactory._scrollIntoView (package:flutter_driver/src/common/handler_factory.dart:388:54)
+<asynchronous suspension>
+#2      FlutterDriverExtension.call (package:flutter_driver/src/extension/extension.dart:373:31)
+<asynchronous suspension>
+#3      BindingBase.registerServiceExtension.<anonymous closure> (package:flutter/src/foundation/binding.dart:602:18)
+<asynchronous suspension>
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:23.903028 >>> {command: get_health}
+2022-06-01 17:24:25.439760 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:25.467761 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:24:28.308167 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:28.314165 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:24:28.540823 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:28.548824 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:24:29.642329 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:29.665327 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:24:31.038335 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:31.046326 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:24:31.413330 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:31.420592 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:24:32.266266 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:32.281249 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:24:32.676248 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:32.684367 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:24:33.071995 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:33.077995 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:24:34.224630 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:34.230628 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:24:34.261629 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:34.266629 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:24:34.437422 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:34.442422 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:24:35.759006 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:35.766004 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:24:36.315003 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:36.325005 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String}
+2022-06-01 17:24:36.358008 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:24:36.366016 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:24:36.944005 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:11.669750 >>> {command: get_health}
+2022-06-01 17:25:13.522676 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:13.548673 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:25:15.730672 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:15.737673 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:25:16.066617 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:16.072614 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:25:17.606807 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:17.637812 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:25:18.863325 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:18.873325 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:25:19.290524 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:19.297525 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:25:20.006656 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:20.016659 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:25:20.931319 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:20.940317 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:25:21.327320 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:21.335320 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:25:21.877143 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:21.885666 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:25:22.003260 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:22.014257 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:25:22.264307 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:22.270307 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:25:23.131343 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:23.136342 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:25:24.245418 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:24.253408 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String}
+2022-06-01 17:25:24.591411 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:25:24.601058 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:25:25.726742 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:05.968418 >>> {command: get_health}
+2022-06-01 17:27:08.698030 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:08.721014 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:27:12.343017 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:12.350016 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:27:12.689219 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:12.694237 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:27:13.427802 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:13.447805 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:27:15.072080 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:15.077080 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:27:15.300082 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:15.308080 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:27:15.962300 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:15.969297 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:27:16.012300 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:16.019298 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:27:16.304986 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:16.312714 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:27:16.961018 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:16.969015 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:27:17.018231 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:17.024232 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:27:17.087231 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:17.093233 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:27:18.304829 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:18.310827 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:27:19.286134 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:19.295136 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String}
+2022-06-01 17:27:19.385133 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:27:19.393137 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:27:20.107191 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:07.832436 >>> {command: get_health}
+2022-06-01 17:35:09.588871 <<< {isError: false, response: {status: ok}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:09.610393 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String, alignment: 0.0}
+2022-06-01 17:35:12.110834 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:12.115902 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: sidemenu, keyValueType: String}
+2022-06-01 17:35:12.471855 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:12.476834 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:35:13.167005 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:13.186001 >>> {command: waitFor, timeout: 1000, finderType: ByType, type: Drawer}
+2022-06-01 17:35:14.876626 <<< {isError: true, response: Timeout while executing waitFor: TimeoutException after 0:00:01.000000: Future not completed
+, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:14.886643 >>> {command: tap, timeout: 10000, finderType: ByTooltipMessage, text: Open navigation menu}
+2022-06-01 17:35:15.035626 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:15.041625 >>> {command: waitForCondition, timeout: 10000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:35:16.241624 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:16.249631 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:35:16.659626 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:16.669630 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: PickUP_menu_button, keyValueType: String}
+2022-06-01 17:35:17.152625 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:17.159624 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:35:18.339465 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:18.345465 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String, alignment: 0.0}
+2022-06-01 17:35:18.551212 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:18.556840 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: ver_horario_pickup_button, keyValueType: String}
+2022-06-01 17:35:18.581847 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:18.589846 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:35:19.307777 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:19.313779 >>> {command: scrollIntoView, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String, alignment: 0.0}
+2022-06-01 17:35:20.403779 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:20.415829 >>> {command: tap, timeout: 30000, finderType: ByValueKey, keyValueString: esof_schedule_pickup_text, keyValueType: String}
+2022-06-01 17:35:20.438200 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:20.444201 >>> {command: waitForCondition, timeout: 30000, conditionName: NoTransientCallbacksCondition}
+2022-06-01 17:35:21.596510 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}
+2022-06-01 17:35:21.627533 >>> {command: waitFor, timeout: 1000, finderType: ByValueKey, keyValueString: horario_page_pickup, keyValueType: String}
+2022-06-01 17:35:21.667514 <<< {isError: false, response: {}, type: _extensionType, method: ext.flutter.driver}

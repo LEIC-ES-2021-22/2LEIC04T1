@@ -96,7 +96,7 @@ class MyAppState extends State<MyApp> {
               case '/' + Constants.navExams:
                 return PageTransition.makePageTransition(
                     page: ExamsPageView(), settings: settings);
-              case '/' + Constants.navEnrollments:
+              case '/' + Constants.navPickUP:
                 return PageTransition.makePageTransition(
                     page: PickupPageView(), settings: settings);
               case '/' + Constants.navStops:

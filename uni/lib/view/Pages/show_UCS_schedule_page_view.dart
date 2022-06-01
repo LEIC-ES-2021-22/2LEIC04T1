@@ -27,7 +27,12 @@ class show_UCS_schedule extends StatefulWidget {
       Show_UCS_scheculeViewState();
 }
 
+
 Widget Build_Course_card(CourseUnit course, BuildContext context) {
+
+  Key key_esof;
+  if(course.abbreviation.compareTo("ESOF") == 0)
+    key_esof = Key("esof_schedule_pickup_text");
 
   return Container(
     width: 300,
@@ -66,7 +71,7 @@ Widget Build_Course_card(CourseUnit course, BuildContext context) {
                     style: ButtonStyle(
                         backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.red)),
-                    child: const Text('Horário'),
+                    child: Text('Horário', key: key_esof),
                     onPressed:    (){
                       Navigator.of(context).push(MaterialPageRoute(builder: (_) => ScheduleCoursePage()));
                       }, //Use navigator to open new page with uc info

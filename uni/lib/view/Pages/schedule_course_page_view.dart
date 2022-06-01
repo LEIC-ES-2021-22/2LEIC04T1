@@ -83,7 +83,7 @@ class ScheduleCoursePageViewState extends State<ScheduleCoursePageView>{
       aggLectures = filtered_Lectures;
     }
 
-    return Column(children: <Widget>[
+    return Column(key: Key("horario_page_pickup"),children: <Widget>[
       Row(children: <Widget>[
         PageTitle(name: 'Horário'),
         Spacer(),

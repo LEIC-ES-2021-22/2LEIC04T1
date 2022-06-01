@@ -25,10 +25,10 @@ List<CourseUnit> get_ucs(){
   courses.add(esof);
   courses.add(alge);
   courses.add(lc);
-  courses.add(esof);
+/*  courses.add(esof);
   courses.add(alge);
   courses.add(lc);
-  courses.add(esof);
+  courses.add(esof);*/
 
   return courses;
   }

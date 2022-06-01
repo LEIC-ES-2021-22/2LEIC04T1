@@ -46,8 +46,7 @@ class PickupPageViewState extends UnnamedPickUPPageView {
 /*        maxCrossAxisExtent: 120,
           crossAxisSpacing: 15.0,
           mainAxisSpacing: 15.0,*/
-                children: actions
-                    .map((action) => ActionButton(action: action))
+                children: actions.map((action) => ActionButton(action: action))
                     .toList(),
               ),
             )
@@ -140,7 +139,22 @@ class ActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Key key_button;
+    if(action.label == "Ver Horário das Unidades Curriculares")
+      key_button = Key("ver_horario_pickup_button");
+    else if(action.label == "Inscrição nas Unidades Curriculares")
+      key_button = Key("inscricao_ucs_pickup_button");
+    else if(action.label == "Ver Horário das Unidades Curriculares")
+      key_button = Key("ver_horario_pickup_button");
+    else if(action.label == "Ver Horário das Unidades Curriculares")
+      key_button = Key("ver_horario_pickup_button");
+    else if(action.label == "Ver Horário das Unidades Curriculares")
+      key_button = Key("ver_horario_pickup_button");
+
+
+
     return OutlinedButton(
+      key: key_button,
         onPressed: () => action.callback?.call(context),
         style: OutlinedButton.styleFrom(
             backgroundColor: action.color,

@@ -27,7 +27,7 @@ class NavigationDrawerState extends State<NavigationDrawer> {
       Constants.navPersonalArea: _onSelectPage,
       Constants.navSchedule: _onSelectPage,
       Constants.navExams: _onSelectPage,
-      Constants.navEnrollments: _onSelectPage,
+      Constants.navPickUP: _onSelectPage,
       Constants.navStops: _onSelectPage,
       Constants.navAbout: _onSelectPage,
       Constants.navBugReport: _onSelectPage,
@@ -86,6 +86,25 @@ class NavigationDrawerState extends State<NavigationDrawer> {
   }
 
   Widget createDrawerNavigationOption(String d) {
+    if(d.compareTo("PickUP") == 0){
+      return Container(
+          decoration: _getSelectionDecoration(d),
+          child: ListTile(
+            key: Key("PickUP_menu_button"),
+            title: Container(
+              padding: EdgeInsets.only(bottom: 3.0, left: 20.0),
+              child: Text(d,
+                  style: TextStyle(
+                      fontSize: 18.0,
+                      color: Theme.of(context).accentColor,
+                      fontWeight: FontWeight.normal)),
+            ),
+            dense: true,
+            contentPadding: EdgeInsets.all(0.0),
+            selected: d == getCurrentRoute(),
+            onTap: () => drawerItems[d](d),
+          ));
+    }
     return Container(
         decoration: _getSelectionDecoration(d),
         child: ListTile(
