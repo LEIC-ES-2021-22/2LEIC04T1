@@ -27,6 +27,7 @@ import 'package:uni/view/Widgets/course_info_card.dart';
 import 'package:uni/view/Widgets/print_info_card.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../model/entities/course_unit.dart';
 import '../../model/entities/lecture.dart';
 import '../Widgets/schedule_slot.dart';
 import 'incricao_UCS_page_view.dart';
@@ -41,19 +42,11 @@ class Add_ucs extends StatefulWidget {
 class Add_ucsViewState extends UnnamedPickUPPageView {
   final double borderRadius = 10.0;
 
-  final List<Course> courses = get_courses();
+  final List<CourseUnit> ucs_disponiveis = avaiable_ucs;
 
-  @override
-  Widget getBody(BuildContext context) {
-    List<Widget> c = <Widget>[];
-    c.add(Text("Adicionar Unidades Curriculares", style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
-    Course a = Course(459481,"Engenharia de Software","ESOF", "2020", 2021, "Active", ["João Pascoal Faria", "Ademar Aguiar"]);
-    String regentt = "";
-    for (int i = 0; i < a.regent_teachers.length; i++) {
-      regentt += a.regent_teachers[i].toString() + "\n";
-    }
+  Widget BuildCourse(BuildContext context, CourseUnit UC){
 
-    c.add(Container(
+    return (Container(
 
       width: 300,
       height: 270,
@@ -72,18 +65,17 @@ class Add_ucsViewState extends UnnamedPickUPPageView {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 //leading: Icon(Icons.album, size: 60),
-                Text(a.name,
+                Text(UC.name,
                     style: TextStyle(
                         fontSize: 30.0,
                         color: Colors.black,
                         fontWeight: FontWeight.bold),
                     textAlign: TextAlign.center),
-                Text(a.currYear,
+                Text(UC.curricularYear.toString(),
                     style: TextStyle(fontSize: 18.0, color: Colors.black45),
                     textAlign: TextAlign.left),
-                Text("\n" + regentt,
-                    style:
-                    TextStyle(fontSize: 18.0, color: Colors.lightBlueAccent),
+                Text(UC.ects.toString(),
+                    style: TextStyle(fontSize: 18.0, color: Colors.black45),
                     textAlign: TextAlign.left),
                 Align(
                     alignment: Alignment.bottomCenter,
@@ -94,19 +86,8 @@ class Add_ucsViewState extends UnnamedPickUPPageView {
                       child: const Text('Adicionar UC'),
                       //Solução temporária
                       onPressed: () async {
-
-                        Navigator.of(context)
-                            .push(MaterialPageRoute(builder: (_) => incricao_UCS()));
-                        /*final url =
-                            "https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=" +
-                                course.id.toString();
-                        if (await canLaunch(url)) {
-                          await launch(url,
-                              forceSafariVC: true,
-                              forceWebView: true,
-                              enableJavaScript: true);
-                        }*/
-
+                        increver_uc(UC);
+                        Navigator.of(context).pop(UC);
                       }, //Use navigator to open new page with uc info
                     ))
               ],
@@ -115,8 +96,19 @@ class Add_ucsViewState extends UnnamedPickUPPageView {
 
     )
     );
+  }
 
 
+
+  @override
+  Widget getBody(BuildContext context) {
+    List<Widget> c = <Widget>[];
+    c.add(Text("Adicionar Unidades Curriculares", style: TextStyle(
+        color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
+
+    for (int i = 0; i < ucs_disponiveis.length; i++){
+      c.add(BuildCourse(context, ucs_disponiveis[i]));
+    }
 
 
     return ListView(children: <Widget>[Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))]);

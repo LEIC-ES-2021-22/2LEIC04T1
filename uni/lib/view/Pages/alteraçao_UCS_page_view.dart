@@ -1,71 +1,188 @@
 import 'package:flutter/cupertino.dart';
-import 'package:uni/controller/load_info.dart';
-import 'package:uni/controller/exam.dart';
 import 'package:uni/controller/mock_get_info.dart';
-import 'package:uni/model/app_state.dart';
-import 'package:uni/model/entities/exam.dart';
+import 'package:uni/model/entities/course_unit.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_redux/flutter_redux.dart';
-import 'package:uni/model/utils/day_of_week.dart';
-import 'package:uni/view/Pages/secondary_page_view.dart';
+import 'package:uni/view/Pages/incricao_UCS_page_view.dart';
 import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
-import 'package:uni/view/Widgets/exam_page_title_filter.dart';
-import 'package:uni/view/Widgets/row_container.dart';
-import 'package:uni/view/Widgets/schedule_row.dart';
-import 'package:uni/view/Widgets/title_card.dart';
-
-import 'dart:io';
-import 'package:uni/model/entities/course.dart';
-import 'package:flutter/material.dart';
-import 'package:uni/view/Pages/unnamed_page_view.dart';
-
-//import '../../lib/controller/mock_get_info.dart';
-import '../../model/entities/course.dart';
-
-import 'package:uni/view/Widgets/account_info_card.dart';
-import 'package:uni/view/Widgets/course_info_card.dart';
-import 'package:uni/view/Widgets/print_info_card.dart';
-import 'package:url_launcher/url_launcher.dart';
-
-import '../../model/entities/lecture.dart';
-import '../Widgets/schedule_slot.dart';
 
 class alteracao_UCS extends StatefulWidget {
-  //final List<Course> courses = get_courses();
   @override
   State<StatefulWidget> createState() => alteracao_UCSViewState();
 }
+
+class alteracao_UC extends State<alteracao_UCS> {
+  alteracao_UC({@required CourseUnit this.uc});
+  CourseUnit uc;
+  @override
+  Widget build(BuildContext context) {
+    return Container(      width: 300,
+      height: 270,
+      padding: new EdgeInsets.all(10.0),
+      child: Card(
+        //possible improvement: dinamically change cards height acording to its contents
+          margin: EdgeInsets.zero,
+          shape: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15.0),
+            borderSide: BorderSide.none,
+          ),
+          color: Colors.grey,
+          elevation: 10,
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                //leading: Icon(Icons.album, size: 60),
+                Text(uc.name,
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center),
+                Align(
+                    alignment: Alignment.bottomCenter,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                            backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.red)),
+                        child: const Text('Alterar Cadeira'),
+                        //Solução temporária
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) =>
+                                  incricao_UCS()));
+                        }
+                    )),
+                Align(
+                    alignment: Alignment.bottomCenter,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                            backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.red)),
+                        child: const Text('Desinscrever'),
+                        //Solução temporária
+                        onPressed: () {
+                          desinscrever_uc(uc);
+                          Navigator.pushAndRemoveUntil(
+                            context,
+                            MaterialPageRoute(builder: (context) => alteracao_UCS()),
+                                (Route<dynamic> route) => false,
+                          );
+                          ScaffoldMessenger.of(context)
+                            ..removeCurrentSnackBar()
+                            ..showSnackBar(SnackBar(backgroundColor: Colors.green,
+                                content: Text('Desincreveste-te à unidade Curricular ${uc.name}', textAlign: TextAlign.center)));
+/*                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) =>
+                                  alteracao_UCS()));*/
+                        }
+                    ))
+                //Build_Course_card_button(uc, context)
+              ],
+            ),
+          )),
+    );
+  }
+
+}
+
 /// Tracks the state of `Enrollment`.
 class alteracao_UCSViewState extends UnnamedPickUPPageView {
-  final double borderRadius = 10.0;
+  List<CourseUnit> ucs = get_enrolled_ucs();
 
-  //final List<Course> courses = get_courses();
+
+  Widget Build_Course_card(CourseUnit uc) {
+    return Container(      width: 350,
+      height: 300,
+      padding: new EdgeInsets.all(10.0),
+      child: Card(
+        //possible improvement: dinamically change cards height acording to its contents
+          margin: EdgeInsets.zero,
+          shape: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(15.0),
+            borderSide: BorderSide.none,
+          ),
+          color: Colors.grey,
+          elevation: 10,
+          child: Center(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                //leading: Icon(Icons.album, size: 60),
+                Text(uc.name,
+                    style: TextStyle(
+                        fontSize: 30.0,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center),
+                Text(uc.curricularYear.toString(),
+                    style: TextStyle(fontSize: 18.0, color: Colors.black45),
+                    textAlign: TextAlign.left),
+                Text(uc.ects.toString() + " ECTS",
+                    style: TextStyle(fontSize: 18.0, color: Colors.deepPurple),
+                    textAlign: TextAlign.left),
+                Align(
+                    alignment: Alignment.bottomCenter,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                            backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.red)),
+                        child: const Text('Alterar Cadeira'),
+                        //Solução temporária
+                        onPressed: () {
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) =>
+                                  incricao_UCS()));
+                        }
+                    )),
+                Align(
+                    alignment: Alignment.bottomCenter,
+                    child: ElevatedButton(
+                        style: ButtonStyle(
+                            backgroundColor:
+                            MaterialStateProperty.all<Color>(Colors.red)),
+                        child: const Text('Desinscrever'),
+                        //Solução temporária
+                        onPressed: () {
+                          desinscrever_uc(uc);
+                          Navigator.pushAndRemoveUntil(context,
+                            MaterialPageRoute(builder: (context) => alteracao_UCS()), // this mymainpage is your page to refresh
+                                (Route<dynamic> route) => false,
+                          );
+                          ScaffoldMessenger.of(context)
+                            ..removeCurrentSnackBar()
+                            ..showSnackBar(SnackBar(backgroundColor: Colors.green,
+                                content: Text('Desincreveste-te à unidade Curricular ${uc.name}', textAlign: TextAlign.center)));
+/*                          Navigator.of(context).pop();
+                          Navigator.of(context).push(
+                              MaterialPageRoute(builder: (_) =>
+                                  alteracao_UCS()));*/
+                        }
+                    ))
+                //Build_Course_card_button(uc, context)
+              ],
+            ),
+          )),
+    );
+  }
+
 
   @override
   Widget getBody(BuildContext context) {
     List<Widget> c = <Widget>[];
-    c.add(Text("Unidades Curriculares atuais:", style: TextStyle(color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
-    return ListView(children: <Widget>[Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))]);
+    c.add(Text("Unidades Curriculares atuais:",
+        style: TextStyle(
+            color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
+    c.add(Text("Créditos atuais: " + creditos_totais.toString(),
+        textAlign: TextAlign.left,
+        style: TextStyle(
+            color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold)));
+    for (CourseUnit uc in ucs){
+        //c.add(new alteracao_UC(uc: uc).build(context));
+        c.add(Build_Course_card(uc));
+      }
+
+    return ListView(children: <Widget>[
+      Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))
+    ]);
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

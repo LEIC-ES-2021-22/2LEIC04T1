@@ -68,6 +68,10 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (_) => incricao_turmas_UCS()));
+                                ScaffoldMessenger.of(context)
+                                  ..removeCurrentSnackBar()
+                                  ..showSnackBar(SnackBar(backgroundColor: Colors.green,
+                                      content: Text('Inscreveste-te na turma ${turma} para ${uc.name}', textAlign: TextAlign.center)));
                               },
                               child: Text('OK'),
                             ),
@@ -113,7 +117,6 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                 Text("\n" + "Turma : " + get_turma_uc(uc) + "\n",
                     style: TextStyle(fontSize: 18.0, color: Colors.deepPurple),
                     textAlign: TextAlign.left),
-                //Build_Course_card_button(uc, context)
               ],
             ),
           )),
@@ -123,7 +126,7 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
 
 /// Tracks the state of `Enrollment`.
 class incricao_turmas_UCSViewState extends UnnamedPickUPPageView {
-  List<CourseUnit> ucs = get_ucs();
+  List<CourseUnit> ucs = get_enrolled_ucs();
 
   @override
   Widget getBody(BuildContext context) {
