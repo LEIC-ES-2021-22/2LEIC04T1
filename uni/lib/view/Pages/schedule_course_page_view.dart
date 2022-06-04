@@ -130,6 +130,7 @@ class ScheduleCoursePageViewState extends State<ScheduleCoursePageView>{
       ),
       Expanded(
           child: TabBarView(
+            key: Key("schedule_tab"),
         controller: tabController,
         children: createSchedule(context),
       ))

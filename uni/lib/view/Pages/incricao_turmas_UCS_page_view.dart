@@ -15,7 +15,6 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
   CourseUnit uc;
 
   Widget Build_Course_card_button(BuildContext context) {
-
     String turma = get_turma_uc(uc);
     List<String> turmas = get_turmas_uc(uc);
 
@@ -70,8 +69,11 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                                         builder: (_) => incricao_turmas_UCS()));
                                 ScaffoldMessenger.of(context)
                                   ..removeCurrentSnackBar()
-                                  ..showSnackBar(SnackBar(backgroundColor: Colors.green,
-                                      content: Text('Inscreveste-te na turma ${turma} para ${uc.name}', textAlign: TextAlign.center)));
+                                  ..showSnackBar(SnackBar(
+                                      backgroundColor: Colors.green,
+                                      content: Text(
+                                          'Inscreveste-te na turma ${turma} para ${uc.name}',
+                                          textAlign: TextAlign.center)));
                               },
                               child: Text('OK'),
                             ),
@@ -91,7 +93,8 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
       height: 270,
       padding: new EdgeInsets.all(10.0),
       child: Card(
-          //possible improvement: dinamically change cards height acording to its contents
+          //possible improvement:
+        // dinamically change cards height acording to its contents
           margin: EdgeInsets.zero,
           shape: OutlineInputBorder(
             borderRadius: BorderRadius.circular(15.0),
@@ -103,7 +106,6 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                //leading: Icon(Icons.album, size: 60),
                 Text(uc.name,
                     style: TextStyle(
                         fontSize: 30.0,

@@ -1,13 +1,9 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
 import 'package:uni/controller/mock_get_info.dart';
 import 'package:flutter/material.dart';
 import 'package:uni/view/Pages/pickup_page_view.dart';
 import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
 import '../../model/entities/course_unit.dart';
-
 import 'inscricao_ucs_add.dart';
-
 
 class incricao_UCS extends StatefulWidget {
   @override
@@ -22,9 +18,10 @@ class incricao_UCSViewState extends UnnamedPickUPPageView {
     return Container(
         width: 400,
         height: 150,
-        padding: new EdgeInsets.all(12.0),
+        padding: EdgeInsets.all(12.0),
         child: Card(
-            //possible improvement: dinamically change cards height acording to its contents
+            //possible improvement:
+            // dinamically change cards height acording to its contents
             margin: EdgeInsets.zero,
             shape: OutlineInputBorder(
               borderRadius: BorderRadius.circular(15.0),
@@ -36,7 +33,6 @@ class incricao_UCSViewState extends UnnamedPickUPPageView {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: <Widget>[
-                  //leading: Icon(Icons.album, size: 60),
                   Text(UC.name,
                       overflow: TextOverflow.clip,
                       style: TextStyle(
@@ -54,15 +50,13 @@ class incricao_UCSViewState extends UnnamedPickUPPageView {
                       textAlign: TextAlign.left),
                 ],
               ),
-            )
-        )
-    );
+            )));
   }
 
   @override
   Widget getBody(BuildContext context) {
     List<Widget> c = <Widget>[];
-    c.add(Text("Adicionar Unidades Curriculares",
+    c.add(Text('Adicionar Unidades Curriculares',
         style: TextStyle(
             color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
 
@@ -70,50 +64,52 @@ class incricao_UCSViewState extends UnnamedPickUPPageView {
       c.add(BuildCourse(context, uc));
     }
 
-    if(creditos_tot >30.0){
+    if (creditos_tot > 30.0) {
       c.add(Text("Créditos totais: " + creditos_tot.toString(),
-          style: TextStyle(color: Colors.red, fontSize: 20, fontWeight: FontWeight.bold)));
-    }else{
-    c.add(Text("Créditos totais: " + creditos_tot.toString(),
-        style: TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold)));
+          style: TextStyle(
+              color: Colors.red, fontSize: 20, fontWeight: FontWeight.bold)));
+    } else {
+      c.add(Text("Créditos totais: " + creditos_tot.toString(),
+          style: TextStyle(
+              color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold)));
     }
     c.add(Container(
-        padding: new EdgeInsets.all(12.0),
+        padding: EdgeInsets.all(12.0),
         child: ElevatedButton(
-      style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
-      child: const Text('+', style: TextStyle(fontSize: 24)),
-      //Solução temporária
-      onPressed: () async {
-        CourseUnit new_uc = await Navigator.push(
-            context, MaterialPageRoute(builder: (_) => Add_ucs()));
-        setState(() {
-          ucs_inscritas = get_enrolled_ucs();
-          creditos_tot = creditos_totais;
-        });
-        ScaffoldMessenger.of(context)
-          ..removeCurrentSnackBar()
-          ..showSnackBar(SnackBar(backgroundColor: Colors.green,
-              content: Text('Increveste-te à unidade Curricular ${new_uc.name}', textAlign: TextAlign.center,)));
-      }, //Use navigator to open new page with uc info
-    )));
-
+          style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
+          child: const Text('+', style: TextStyle(fontSize: 24)),
+          onPressed: () async {
+            CourseUnit new_uc = await Navigator.push(
+                context, MaterialPageRoute(builder: (_) => Add_ucs()));
+            setState(() {
+              ucs_inscritas = get_enrolled_ucs();
+              creditos_tot = creditos_totais;
+            });
+            ScaffoldMessenger.of(context)
+              ..removeCurrentSnackBar()
+              ..showSnackBar(SnackBar(
+                  backgroundColor: Colors.green,
+                  content: Text(
+                    'Increveste-te à unidade Curricular ${new_uc.name}',
+                    textAlign: TextAlign.center,
+                  )));
+          },
+        )));
     c.add(Container(
         child: ElevatedButton(
       style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(Colors.green)),
       child: const Text('Concluir', style: TextStyle(fontSize: 24)),
-      //Solução temporária
       onPressed: () async {
         creditos_totais = creditos_tot;
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (_) => PickupPageView()));
-      }, //Use navigator to open new page with uc info
+      },
     )));
 
     return ListView(children: <Widget>[
       Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))
     ]);
   }
-
 }

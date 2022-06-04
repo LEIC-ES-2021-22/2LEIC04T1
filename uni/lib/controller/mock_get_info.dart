@@ -98,10 +98,20 @@ String get_turma_uc(CourseUnit uc){
 
 }
 
+void desincrever_turma_uc(CourseUnit uc){
+
+  if(enrolled_ucs.containsKey(uc)){
+    enrolled_ucs[uc] = "-";
+  }
+
+  return;
+}
 
 void set_turma_uc(CourseUnit uc, String turma){
 
-  enrolled_ucs[uc] = turma;
+  if(enrolled_ucs.containsKey(uc)){
+    enrolled_ucs[uc] = turma;
+  }
 
   return;
 }

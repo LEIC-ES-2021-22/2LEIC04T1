@@ -3,11 +3,9 @@ import 'package:uni/view/Pages/altera%C3%A7ao_UCS_page_view.dart';
 import 'package:uni/view/Pages/incricao_UCS_page_view.dart';
 import 'package:uni/view/Pages/incricao_turmas_UCS_page_view.dart';
 import 'package:uni/view/Pages/show_UCS_schedule_page_view.dart';
-import 'package:uni/model/schedule_course_page_model.dart';
-import 'package:uni/view/Pages/general_page_view.dart';
 import 'package:uni/view/Pages/unnamed_pickup_page_view.dart';
-import 'package:uni/view/Widgets/main_cards_list.dart';
 import 'package:uni/model/schedule_pickup_page_model.dart';
+
 class PickupPageView extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => PickupPageViewState();
@@ -18,39 +16,35 @@ class PickupPageViewState extends UnnamedPickUPPageView {
   @override
   Widget getBody(BuildContext context) {
     return Column(children: <Widget>[
-            SizedBox(
-              height: 30, // <-- SEE HERE
-            ),
-            RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                    style: new TextStyle(
-                        fontSize: 36.0,
-                        color: Colors.red,
-                        fontWeight: FontWeight.bold),
-                    children: <TextSpan>[
-                      TextSpan(text: "Pick"),
-                      TextSpan(
-                          text: "Up", style: new TextStyle(color: Colors.black))
-                    ])), // Título página principal
-            Container(
-              margin: EdgeInsets.all(10),
-              padding: EdgeInsets.all(30.0),
-              alignment: Alignment.topCenter,
-              child: Wrap(
-                direction: Axis.vertical,
-                spacing: 30,
-                alignment: WrapAlignment.center,
-                runAlignment: WrapAlignment.center,
-                crossAxisAlignment: WrapCrossAlignment.center,
-/*        maxCrossAxisExtent: 120,
-          crossAxisSpacing: 15.0,
-          mainAxisSpacing: 15.0,*/
-                children: actions.map((action) => ActionButton(action: action))
-                    .toList(),
-              ),
-            )
-          ]);
+      SizedBox(
+        height: 30,
+      ),
+      RichText(
+          textAlign: TextAlign.center,
+          text: TextSpan(
+              style: new TextStyle(
+                  fontSize: 36.0,
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold),
+              children: <TextSpan>[
+                TextSpan(text: "Pick"),
+                TextSpan(text: "Up", style: new TextStyle(color: Colors.black))
+              ])), // Título página principal
+      Container(
+        margin: EdgeInsets.all(10),
+        padding: EdgeInsets.all(30.0),
+        alignment: Alignment.topCenter,
+        child: Wrap(
+          direction: Axis.vertical,
+          spacing: 30,
+          alignment: WrapAlignment.center,
+          runAlignment: WrapAlignment.center,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children:
+              actions.map((action) => ActionButton(action: action)).toList(),
+        ),
+      )
+    ]);
   }
 }
 
@@ -96,7 +90,8 @@ final List<AppAction> actions = [
     label: 'Inscrição nas Unidades Curriculares',
     labelColor: Colors.black,
     callback: (context) {
-      Navigator.of(context).push(MaterialPageRoute(builder: (_) => incricao_UCS()));
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (_) => incricao_UCS()));
     },
   ),
 ];
@@ -129,6 +124,7 @@ class AppLayout extends StatelessWidget {
     );
   }
 }
+
 class ActionButton extends StatelessWidget {
   final AppAction action;
 
@@ -140,28 +136,25 @@ class ActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Key key_button;
-    if(action.label == "Ver Horário das Unidades Curriculares")
+    if (action.label == "Ver Horário das Unidades Curriculares")
       key_button = Key("ver_horario_pickup_button");
-    else if(action.label == "Inscrição nas Unidades Curriculares")
+    else if (action.label == "Inscrição nas Unidades Curriculares")
       key_button = Key("inscricao_ucs_pickup_button");
-    else if(action.label == "Ver Horário das Unidades Curriculares")
+    else if (action.label == "Ver Horário das Unidades Curriculares")
       key_button = Key("ver_horario_pickup_button");
-    else if(action.label == "Ver Horário das Unidades Curriculares")
+    else if (action.label == "Ver Horário das Unidades Curriculares")
       key_button = Key("ver_horario_pickup_button");
-    else if(action.label == "Ver Horário das Unidades Curriculares")
+    else if (action.label == "Ver Horário das Unidades Curriculares")
       key_button = Key("ver_horario_pickup_button");
-
-
 
     return OutlinedButton(
-      key: key_button,
+        key: key_button,
         onPressed: () => action.callback?.call(context),
         style: OutlinedButton.styleFrom(
             backgroundColor: action.color,
             padding: const EdgeInsets.all(16.0),
             alignment: Alignment.center,
             fixedSize: Size(300, 80)), //change buttons size
-        //label: Text(action.label, style: TextStyle(color: action.labelColor)),
         child: Text(action.label,
             textAlign: TextAlign.center,
             style: TextStyle(color: action.labelColor, fontSize: 20)));

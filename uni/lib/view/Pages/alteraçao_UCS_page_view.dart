@@ -118,7 +118,10 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
                     style: TextStyle(fontSize: 18.0, color: Colors.black45),
                     textAlign: TextAlign.left),
                 Text(uc.ects.toString() + " ECTS",
-                    style: TextStyle(fontSize: 18.0, color: Colors.deepPurple),
+                    style: TextStyle(fontSize: 18.0, color: Colors.deepPurple,fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.left),
+                Text("Turma: " + get_turma_uc(uc),
+                    style: TextStyle(fontSize: 20.0, color: Colors.blue, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left),
                 Align(
                     alignment: Alignment.bottomCenter,
@@ -126,12 +129,16 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
                         style: ButtonStyle(
                             backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.red)),
-                        child: const Text('Alterar Cadeira'),
+                        child: const Text('Desincrever Turma'),
                         //Solução temporária
                         onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute(builder: (_) =>
-                                  incricao_UCS()));
+                        if(get_turma_uc(uc) != "-") {
+                          desincrever_turma_uc(uc);
+                          Navigator.pushAndRemoveUntil(context,
+                            MaterialPageRoute(builder: (context) => alteracao_UCS()), // this mymainpage is your page to refresh
+                                (Route<dynamic> route) => false,
+                          );
+                        }
                         }
                     )),
                 Align(
@@ -143,19 +150,22 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
                         child: const Text('Desinscrever'),
                         //Solução temporária
                         onPressed: () {
-                          desinscrever_uc(uc);
-                          Navigator.pushAndRemoveUntil(context,
-                            MaterialPageRoute(builder: (context) => alteracao_UCS()), // this mymainpage is your page to refresh
-                                (Route<dynamic> route) => false,
-                          );
-                          ScaffoldMessenger.of(context)
-                            ..removeCurrentSnackBar()
-                            ..showSnackBar(SnackBar(backgroundColor: Colors.green,
-                                content: Text('Desincreveste-te à unidade Curricular ${uc.name}', textAlign: TextAlign.center)));
-/*                          Navigator.of(context).pop();
-                          Navigator.of(context).push(
-                              MaterialPageRoute(builder: (_) =>
-                                  alteracao_UCS()));*/
+                            desinscrever_uc(uc);
+                            Navigator.pushAndRemoveUntil(context,
+                              MaterialPageRoute(
+                                  builder: (context) => alteracao_UCS()),
+                              // this mymainpage is your page to refresh
+                                  (Route<dynamic> route) => false,
+
+                            );
+                            ScaffoldMessenger.of(context)
+                              ..removeCurrentSnackBar()
+                              ..showSnackBar(SnackBar(backgroundColor: Colors
+                                  .green,
+                                  content: Text(
+                                      'Desincreveste-te à unidade Curricular ${uc
+                                          .name}',
+                                      textAlign: TextAlign.center)));
                         }
                     ))
                 //Build_Course_card_button(uc, context)
