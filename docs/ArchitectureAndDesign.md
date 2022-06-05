@@ -5,7 +5,7 @@ No projeto, serão implementadas as funções de inscrição nas unidades curric
 
 ### Logical architecture
 
-Example of _UML package diagram_ showing a _logical view_ of the PickUp App:
+Logical View Diagram:
 
  <p align="center" justify="center">
   <img src="/images/Logical_View.png"/>
@@ -29,7 +29,7 @@ iteracting with Sigarra's DataBase
 
 ### Physical architecture
 
-Example of UML deployment diagram showing a deployment view of the PickUP App:
+Deployment View Diagram:
 
  <p align="center" justify="center">
   <img src="/images/physical architecture.png"/>
