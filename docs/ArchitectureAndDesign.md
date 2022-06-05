@@ -5,7 +5,7 @@ No projeto, serão implementadas as funções de inscrição nas unidades curric
 
 ### Logical architecture
 
-Example of _UML package diagram_ showing a _logical view_ of the PickUp App:
+Logical View Diagram:
 
  <p align="center" justify="center">
   <img src="/images/Logical_View.png"/>
@@ -18,8 +18,8 @@ In this Logical View we can see several packages required for the architecture o
 
     - PickUP UI Interface: Package containing all the visual features of the app like Buttons, Menus, Webviews, etc...
     - PickUp Class Atribution Logic: Package containing all the code necessary to assigin classes to the user, it 	contains all the logic and procedures regarding this atribuition.
-    - PickUP Curricular Units Logic:Package containing all the code necessary to assigin Curricular Units to the 	user, it contains all the logic and procedures regarding this atribuition.
-    - PickUp DataBase schema: Package Refering to the UniApp that takes care of the backend features of the app like 
+    - PickUP Curricular Units Logic: Package containing all the code necessary to assigin Curricular Units to the 	user, it contains all the logic and procedures regarding this atribuition.
+    - PickUp DataBase schema: Package that takes care of the backend features of the app like 
 iteracting with Sigarra's DataBase
 
 2. Inside Sigarra Platform package:
@@ -29,7 +29,7 @@ iteracting with Sigarra's DataBase
 
 ### Physical architecture
 
-Example of UML deployment diagram showing a deployment view of the PickUP App:
+Deployment View Diagram:
 
  <p align="center" justify="center">
   <img src="/images/physical architecture.png"/>
