@@ -39,6 +39,7 @@ class SchedulePageView extends StatelessWidget {
         ],
       ),
       Expanded(
+          key: Key("schedule_tab"),
           child: TabBarView(
         controller: tabController,
         children: createSchedule(context),

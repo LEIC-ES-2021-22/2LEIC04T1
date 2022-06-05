@@ -60,11 +60,11 @@ final List<AppAction> actions = [
   ),
   AppAction(
     color: Colors.redAccent,
-    label: 'Alteração das Unidades Curriculares',
+    label: 'Inscrição nas Unidades Curriculares',
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => alteracao_UCS()));
+          .push(MaterialPageRoute(builder: (_) => incricao_UCS()));
     },
   ),
   AppAction(
@@ -78,20 +78,20 @@ final List<AppAction> actions = [
   ),
   AppAction(
     color: Colors.redAccent,
+    label: 'Alteração das Unidades Curriculares',
+    labelColor: Colors.black,
+    callback: (context) {
+      Navigator.of(context)
+          .push(MaterialPageRoute(builder: (_) => alteracao_UCS()));
+    },
+  ),
+  AppAction(
+    color: Colors.redAccent,
     label: 'Ver Horário',
     labelColor: Colors.black,
     callback: (context) {
       Navigator.of(context)
           .push(MaterialPageRoute(builder: (_) => SchedulePickUPPage()));
-    },
-  ),
-  AppAction(
-    color: Colors.redAccent,
-    label: 'Inscrição nas Unidades Curriculares',
-    labelColor: Colors.black,
-    callback: (context) {
-      Navigator.of(context)
-          .push(MaterialPageRoute(builder: (_) => incricao_UCS()));
     },
   ),
 ];
@@ -137,10 +137,10 @@ class ActionButton extends StatelessWidget {
   Widget build(BuildContext context) {
     Key key_button;
     if (action.label == "Ver Horário das Unidades Curriculares")
-      key_button = Key("ver_horario_pickup_button");
+      key_button = Key("ver_horario_turma_pickup_button");
     else if (action.label == "Inscrição nas Unidades Curriculares")
       key_button = Key("inscricao_ucs_pickup_button");
-    else if (action.label == "Ver Horário das Unidades Curriculares")
+    else if (action.label == "Ver Horário")
       key_button = Key("ver_horario_pickup_button");
     else if (action.label == "Ver Horário das Unidades Curriculares")
       key_button = Key("ver_horario_pickup_button");

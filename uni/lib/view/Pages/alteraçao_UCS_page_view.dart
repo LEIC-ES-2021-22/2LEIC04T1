@@ -133,11 +133,19 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
                         //Solução temporária
                         onPressed: () {
                         if(get_turma_uc(uc) != "-") {
+                          String turma_eliminada = get_turma_uc(uc);
                           desincrever_turma_uc(uc);
                           Navigator.pushAndRemoveUntil(context,
                             MaterialPageRoute(builder: (context) => alteracao_UCS()), // this mymainpage is your page to refresh
                                 (Route<dynamic> route) => false,
                           );
+                          ScaffoldMessenger.of(context)
+                            ..removeCurrentSnackBar()
+                            ..showSnackBar(SnackBar(
+                                backgroundColor: Colors.green,
+                                content: Text(
+                                    'Desinscreveste-te da turma ${turma_eliminada} para ${uc.name}',
+                                    textAlign: TextAlign.center)));
                         }
                         }
                     )),
@@ -174,6 +182,7 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
           )),
     );
   }
+
 
 
   @override

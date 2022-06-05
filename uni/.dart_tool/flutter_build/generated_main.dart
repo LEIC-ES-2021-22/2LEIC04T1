@@ -5,10 +5,10 @@
 
 // @dart = 2.7
 
-// When `package:uni/main.dart` defines `main`, that definition is shadowed by the definition below.
-export 'package:uni/main.dart';
+// When `file:///C:/University/2%20ano/2%20Semestre/ES/Projeto%20%20ES/2LEIC04T1/uni/test_driver/app.dart` defines `main`, that definition is shadowed by the definition below.
+export 'file:///C:/University/2%20ano/2%20Semestre/ES/Projeto%20%20ES/2LEIC04T1/uni/test_driver/app.dart';
 
-import 'package:uni/main.dart' as entrypoint;
+import 'file:///C:/University/2%20ano/2%20Semestre/ES/Projeto%20%20ES/2LEIC04T1/uni/test_driver/app.dart' as entrypoint;
 import 'dart:io'; // flutter_ignore: dart_io_import.
 import 'package:path_provider_android/path_provider_android.dart';
 import 'package:shared_preferences_android/shared_preferences_android.dart';

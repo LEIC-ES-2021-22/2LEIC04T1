@@ -28,13 +28,14 @@ class SchedulePickUPPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     final MediaQueryData queryData = MediaQuery.of(context);
 
-    return Column(children: <Widget>[
+    return Column(key: Key("horario_page_pickup"), children: <Widget>[
       ListView(
         scrollDirection: Axis.vertical,
         shrinkWrap: true,
         children: <Widget>[
           PageTitle(name: 'Horário'),
           TabBar(
+            key: Key("horario_page_pickup_schedule"),
             controller: tabController,
             isScrollable: true,
             tabs: createTabs(queryData, context),
