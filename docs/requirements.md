@@ -87,8 +87,15 @@ Description of each use case:
 To better understand the context of the software system, it is very useful to have a simple UML class diagram with all the key concepts (names, attributes) and relationships involved of the problem domain addressed by your module. 
 Also provide a short textual description of each class. 
 
-Example:
+Diagram:
  <p align="center" justify="center">
   <img src="https://github.com/LEIC-ES-2021-22/2LEIC04T1/blob/main/images/Domain_Model.png"/>
 </p>
 
+Description of each class:
+
+- Estudante/User: Representa os utilizadores da app e possui como atributos um Nome, Nome de utilizador, Password, Data de nascimento, Nº Mecanográfico, ECTS Disponíveis e Classificação média. Cada instância desta classe pode estar associada a várias turmas e unidades curriculares e a, pelo menos, um curso.
+- Unidade Curricular: Representa as unidades curriculares e possui como atributos um Nome, descrição e quantidade de ECTS. Cada instância desta classe pode estar associada a vários Estudantes/Users, Turmas e a um único curso.
+- Turma: Representa as Turmas e possui como atributos um Número/ID e Nome. Cada instância desta classe pode estar associada a vários Estudantes/Users e Unidades Curriculares.
+- Curso: Representa os Cursos e possui como atributos um Nome e descrição. Cada instância desta classe pode estar associada a vários Estudantes/Users e Unidades Curriculares.
+- Classe de Associação entre Estudante e Unidade Curricular: Representa as ocurrências de cada unidade curricular e possui como atributo único o Ano Curricular da ocurrência.
