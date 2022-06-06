@@ -37,13 +37,18 @@ Deployment View Diagram:
 
 In this Deployment View we can see machines, connections, software components installed, and their dependencies.
 
-We have present in the diagram:
+1. Inside Student Machine (Mobile Phone):
 
- - The mobile phone used by the student to access the PickUp App
- - The Application (PickUP)
- - The database of the App
- - The backend from sigarra where the App takes information from
- - The processes executed by the App (Class atribution and Curricular Units atribution)
+    - Application: The student can download and use the PickUp App in his mobile phone.
+
+2. Inside PickUp Server Machine:
+    
+    - PickUp UI Interface: Represents all the visual features of the app like Buttons, Menus, etc... 
+    - Application Logical Services: Contains the code and procedures to all the functionalities that the student can use like, see schedule, enroll in new curricular units, etc...
+    
+3. Inside Sigarra Machine:
+
+    - Sigarra Backend: Contains Sigarra's Databases needed for implementing the app and display proper information about the student that is logged into is account. The communication with the database is made by UniApp.
 
 
 ### Vertical prototype
