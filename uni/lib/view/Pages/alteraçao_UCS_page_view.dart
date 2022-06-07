@@ -10,93 +10,20 @@ class alteracao_UCS extends StatefulWidget {
   State<StatefulWidget> createState() => alteracao_UCSViewState();
 }
 
-class alteracao_UC extends State<alteracao_UCS> {
-  alteracao_UC({@required CourseUnit this.uc});
-  CourseUnit uc;
-  @override
-  bool check_isfirst = true;
-  Widget build(BuildContext context) {
-
-    Key key_isfirst;
-    if(check_isfirst){
-      key_isfirst = Key("desinscrever_turma");
-    }
-    return Container(      width: 300,
-      height: 270,
-      padding: new EdgeInsets.all(10.0),
-      child: Card(
-        //possible improvement: dinamically change cards height acording to its contents
-          margin: EdgeInsets.zero,
-          shape: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15.0),
-            borderSide: BorderSide.none,
-          ),
-          color: Colors.grey,
-          elevation: 10,
-          child: Center(
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: <Widget>[
-                //leading: Icon(Icons.album, size: 60),
-                Text(uc.name,
-                    style: TextStyle(
-                        fontSize: 30.0,
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center),
-                Align(
-                    alignment: Alignment.bottomCenter,
-                    child: ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.red)),
-                        child: const Text('Alterar Cadeira'),
-                        //Solução temporária
-                        onPressed: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute(builder: (_) =>
-                                  incricao_UCS()));
-                        }
-                    )),
-                Align(
-                    alignment: Alignment.bottomCenter,
-                    child: ElevatedButton(
-                        style: ButtonStyle(
-                            backgroundColor:
-                            MaterialStateProperty.all<Color>(Colors.red)),
-                        child: const Text('Desinscrever'),
-                        //Solução temporária
-                        onPressed: () {
-                          desinscrever_uc(uc);
-                          Navigator.pushAndRemoveUntil(
-                            context,
-                            MaterialPageRoute(builder: (context) => alteracao_UCS()),
-                                (Route<dynamic> route) => false,
-                          );
-                          ScaffoldMessenger.of(context)
-                            ..removeCurrentSnackBar()
-                            ..showSnackBar(SnackBar(backgroundColor: Colors.green,
-                                content: Text('Desincreveste-te à unidade Curricular ${uc.name}', textAlign: TextAlign.center)));
-/*                          Navigator.of(context).push(
-                              MaterialPageRoute(builder: (_) =>
-                                  alteracao_UCS()));*/
-                        }
-                    ))
-                //Build_Course_card_button(uc, context)
-              ],
-            ),
-          )),
-    );
-  }
-
-}
 
 /// Tracks the state of `Enrollment`.
 class alteracao_UCSViewState extends UnnamedPickUPPageView {
   List<CourseUnit> ucs = get_enrolled_ucs();
 
+  bool check_isfirst = true;
 
   Widget Build_Course_card(CourseUnit uc) {
+    Key key_isfirst, key_desincrever_turma_first;
+    if(check_isfirst){
+      key_desincrever_turma_first = Key("desinscrever_1st_turma");
+      key_isfirst = Key("1st_uc");
+      check_isfirst = false;
+    }
     return Container(      width: 350,
       height: 300,
       padding: new EdgeInsets.all(10.0),
@@ -111,6 +38,7 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
           elevation: 10,
           child: Center(
             child: Column(
+              key:key_isfirst,
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 //leading: Icon(Icons.album, size: 60),
@@ -127,11 +55,13 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
                     style: TextStyle(fontSize: 18.0, color: Colors.deepPurple,fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left),
                 Text("Turma: " + get_turma_uc(uc),
+                    key: Key("turma_uc"),
                     style: TextStyle(fontSize: 20.0, color: Colors.blue, fontWeight: FontWeight.bold),
                     textAlign: TextAlign.left),
                 Align(
                     alignment: Alignment.bottomCenter,
                     child: ElevatedButton(
+                      key: key_desincrever_turma_first,
                         style: ButtonStyle(
                             backgroundColor:
                             MaterialStateProperty.all<Color>(Colors.red)),
@@ -198,7 +128,7 @@ class alteracao_UCSViewState extends UnnamedPickUPPageView {
       }
 
     return ListView(children: <Widget>[
-      Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))
+      Container(key:Key("uc_cards"), child: Column(mainAxisSize: MainAxisSize.max, children: c))
     ]);
   }
 }

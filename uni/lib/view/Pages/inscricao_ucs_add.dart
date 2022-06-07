@@ -18,6 +18,7 @@ class Add_ucsViewState extends UnnamedPickUPPageView {
     Key key_first;
     if(checkfirst){
       key_first = Key("adicionar_uc");
+      checkfirst = false;
     }
     return (Container(
       width: 300,
@@ -54,6 +55,7 @@ class Add_ucsViewState extends UnnamedPickUPPageView {
                 Align(
                     alignment: Alignment.bottomCenter,
                     child: ElevatedButton(
+                      key: key_first,
                       style: ButtonStyle(
                           backgroundColor:
                               MaterialStateProperty.all<Color>(Colors.red)),

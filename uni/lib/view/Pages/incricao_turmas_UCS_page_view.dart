@@ -10,17 +10,25 @@ class incricao_turmas_UCS extends StatefulWidget {
 }
 
 class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
-  incricao_turma_cadeira({@required CourseUnit this.uc});
+  incricao_turma_cadeira({@required CourseUnit this.uc,@required bool this.checkfirst});
 
   CourseUnit uc;
+  bool checkfirst;
 
   Widget Build_Course_card_button(BuildContext context) {
     String turma = get_turma_uc(uc);
     List<String> turmas = get_turmas_uc(uc);
 
+    Key key_uc_first_escolher_turmas, key_turma_inscrever_1st_uc;
+    if(checkfirst){
+      key_uc_first_escolher_turmas = Key("escolher_turma_1st_uc");
+      key_turma_inscrever_1st_uc = Key("inscrever_turma_1st_uc");
+    }
+
     return Align(
         alignment: Alignment.bottomCenter,
         child: ElevatedButton(
+          key: key_uc_first_escolher_turmas,
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(Colors.red)),
             child: const Text('Escolher Turma'),
@@ -43,6 +51,7 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                                 return ListTile(
                                     title: Text(_key),
                                     leading: Radio<String>(
+                                      key: Key(_key),
                                         groupValue: turma,
                                         value: _key,
                                         onChanged: (val) {
@@ -61,6 +70,7 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                               child: Text('Cancelar'),
                             ),
                             TextButton(
+                              key: key_turma_inscrever_1st_uc,
                               onPressed: () {
                                 set_turma_uc(uc, turma);
                                 Navigator.push(
@@ -75,7 +85,7 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                                           'Inscreveste-te na turma ${turma} para ${uc.name}',
                                           textAlign: TextAlign.center)));
                               },
-                              child: Text('OK'),
+                              child: Text('Inscrever'),
                             ),
                           ],
                         );
@@ -84,10 +94,16 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                   });
             } //Use navigator to open new page with uc info
             ));
+
   }
 
   @override
   Widget build(BuildContext context) {
+
+    Key key_1st_uc_card;
+    if(checkfirst && get_turma_uc(uc) == "2LEIC02"){
+      key_1st_uc_card = Key("1st_uc_is_2LEIC02");
+    }
     return Container(
       width: 300,
       height: 270,
@@ -117,6 +133,7 @@ class incricao_turma_cadeira extends State<incricao_turmas_UCS> {
                     textAlign: TextAlign.left),
                 Build_Course_card_button(context),
                 Text("\n" + "Turma : " + get_turma_uc(uc) + "\n",
+                    key: key_1st_uc_card,
                     style: TextStyle(fontSize: 18.0, color: Colors.deepPurple),
                     textAlign: TextAlign.left),
               ],
@@ -136,11 +153,14 @@ class incricao_turmas_UCSViewState extends UnnamedPickUPPageView {
     c.add(Text("Unidades Curriculares atuais:",
         style: TextStyle(
             color: Colors.black, fontSize: 24, fontWeight: FontWeight.bold)));
+
+    c.add(new incricao_turma_cadeira(uc: ucs[0], checkfirst: true).build(context));
+    ucs.removeAt(0);
     for (CourseUnit uc in ucs) {
-      c.add(new incricao_turma_cadeira(uc: uc).build(context));
+      c.add(new incricao_turma_cadeira(uc: uc, checkfirst: false).build(context));
     }
     return ListView(children: <Widget>[
-      Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))
+      Container(key: Key("uc_cards"),child: Column(mainAxisSize: MainAxisSize.max, children: c))
     ]);
   }
 }

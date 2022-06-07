@@ -110,7 +110,7 @@ class incricao_UCSViewState extends UnnamedPickUPPageView {
     )));
 
     return ListView(children: <Widget>[
-      Container(child: Column(mainAxisSize: MainAxisSize.max, children: c))
+      Container(key: Key("uc_cards"),child: Column(mainAxisSize: MainAxisSize.max, children: c))
     ]);
   }
 }

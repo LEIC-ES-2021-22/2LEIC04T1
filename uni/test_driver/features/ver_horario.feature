@@ -3,8 +3,8 @@ Feature: Ver Horário
 
 #  this tests expect that your login is saved
   Scenario: Ver horário
-    When I wait until the "main-page" is present
-    And  I tap the "sidemenu" button
+    Given I wait until the "main-page" is present
+    When  I tap the "sidemenu" button
     And I open the drawer
     And I tap the "PickUP_menu_button" button
     And I tap the "ver_horario_pickup_button" button
@@ -12,8 +12,8 @@ Feature: Ver Horário
 
 
   Scenario: Ver horário e dar swipe
-    When I wait until the "main-page" is present
-    And I tap the "sidemenu" button
+    Given I wait until the "main-page" is present
+    When I tap the "sidemenu" button
     And I open the drawer
     And I tap the "PickUP_menu_button" button
     And I tap the "ver_horario_pickup_button" button

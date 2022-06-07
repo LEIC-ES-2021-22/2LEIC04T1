@@ -142,8 +142,8 @@ class ActionButton extends StatelessWidget {
       key_button = Key("inscricao_ucs_pickup_button");
     else if (action.label == "Ver Horário")
       key_button = Key("ver_horario_pickup_button");
-    else if (action.label == "Ver Horário das Unidades Curriculares")
-      key_button = Key("ver_horario_pickup_button");
+    else if (action.label == "Inscrição nas Turmas")
+      key_button = Key("inscricao_turmas_pickup_button");
     else if (action.label == "Alteração das Unidades Curriculares")
       key_button = Key("alteracao_ucs_pickup_button");
 
